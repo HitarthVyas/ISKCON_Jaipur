@@ -20,13 +20,13 @@ const HomeActivities = () => {
       <div>
         <div className="grid grid-cols-1 lg:grid-cols-3 text-center">
           <div className="p-10 flex flex-col items-center">
-            <div className="relative h-[350px] relative w-full bg-[url('/Home/HomeExplore/homeSchedule.jpg')] bg-cover bg-center">
+            <div className="h-[350px] relative w-full bg-[url('/Home/HomeExplore/homeSchedule.jpg')] bg-cover bg-center">
               <h1 className={`absolute bottom-2 w-full ${playfair.className} pt-4 font-medium px-4`}>ISKCON Youth Forum</h1>
             </div>
           </div>
           <div className="p-10 flex flex-col items-center">
             <div className="h-[350px] relative w-full bg-[url('/Home/HomeExplore/homeSchedule.jpg')] bg-cover bg-center">
-              <h1 className={`${playfair.className} absolute bottom-2 w-full pt-4 font-medium px-4`}>ISKCON Girl's Forum</h1>
+              <h1 className={`${playfair.className} absolute bottom-2 w-full pt-4 font-medium px-4`}>Kids And Teenager Classes</h1>
             </div>
           </div>
           <div className="p-10 flex flex-col items-center">

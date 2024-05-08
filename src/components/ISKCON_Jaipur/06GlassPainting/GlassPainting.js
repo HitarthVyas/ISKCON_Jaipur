@@ -28,11 +28,11 @@ const GlassPainting = () => {
               />
               <div className="max-w-[900px] p-3">
                 <p className="text-justify text-sm xl:text-lg hidden sm:block">
-                  Jaipur's renowned artistry inspired us to create a temple that
+                  Jaipur&apos;s renowned artistry inspired us to create a temple that
                   not only serves devotees but also enlightens people worldwide
                   about Vedic Culture through Art. Thus, we present the
                   <b className="text-gray-200">
-                    "Windows to the Spiritual World Gallery,"
+                  &quot;Windows to the Spiritual World Gallery,	&quot;
                   </b>
                   featuring fifty-two stained glass windows— the world's largest
                   display of its kind. The initial twelve windows will be eleven
@@ -51,8 +51,8 @@ const GlassPainting = () => {
                   the beauty and depth of Vedic Culture.
                 </p>
                 <p className="sm:hidden block text-justify">
-                  Inspired by Jaipur's artistry, our temple, the "Windows to the
-                  Spiritual World Gallery," showcases Vedic Culture through
+                  Inspired by Jaipur&apos;s artistry, our temple, the &quot;Windows to the
+                  Spiritual World Gallery, &quot; showcases Vedic Culture through
                   fifty-two stained glass windows—the world's largest display of
                   its kind. Initial windows stand at eleven feet high and four
                   feet wide, followed by forty windows at twelve feet high and

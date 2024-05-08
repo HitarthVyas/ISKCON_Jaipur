@@ -43,8 +43,8 @@ export default function SadhuPaymentSection() {
   return (
     <>
          {/* payment section start */}
-         <div class=" md:mx-16 sm:mx-9 mx-2 flex flex-col md:flex-row py-[20px] bg-[#400669] rounded-lg">
-            <div class=" flex flex-col items-center justify-center w-full  md:w-1/2 pb-[20px]">
+         <div className=" md:mx-16 sm:mx-9 mx-2 flex flex-col md:flex-row py-[20px] bg-[#400669] rounded-lg">
+            <div className=" flex flex-col items-center justify-center w-full  md:w-1/2 pb-[20px]">
               <div className="flex">
                 <p
                   className={`text-[24px] text-center font-bold text-[#FCD6A0] ${mons.className} p-[20px]`}
@@ -57,7 +57,7 @@ export default function SadhuPaymentSection() {
               </div>
             </div>
 
-            <div class="  flex flex-col items-center w-full  md:w-1/2">
+            <div className="  flex flex-col items-center w-full  md:w-1/2">
               <div className="flex">
                 <p
                   className={`text-[24px] text-center font-bold text-[#FCD6A0] ${mons.className} p-[20px]`}
