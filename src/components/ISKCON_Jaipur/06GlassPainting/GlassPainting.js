@@ -34,7 +34,7 @@ const GlassPainting = () => {
                   <b className="text-gray-200">
                   &quot;Windows to the Spiritual World Gallery,	&quot;
                   </b>
-                  featuring fifty-two stained glass windows— the world's largest
+                  featuring fifty-two stained glass windows— the world&apos;s largest
                   display of its kind. The initial twelve windows will be eleven
                   feet high and four feet wide, followed by forty windows at
                   twelve feet high and six feet wide.
@@ -53,7 +53,7 @@ const GlassPainting = () => {
                 <p className="sm:hidden block text-justify">
                   Inspired by Jaipur&apos;s artistry, our temple, the &quot;Windows to the
                   Spiritual World Gallery, &quot; showcases Vedic Culture through
-                  fifty-two stained glass windows—the world's largest display of
+                  fifty-two stained glass windows—the world&apos;s largest display of
                   its kind. Initial windows stand at eleven feet high and four
                   feet wide, followed by forty windows at twelve feet high and
                   six feet wide. Master Artist Mr. Colin Greenwood, inspired by
