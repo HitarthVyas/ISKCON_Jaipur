@@ -21,7 +21,7 @@ export default function MainPoster() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            Donate for Brahman's
+            Donate for Brahman&apos;s
             {isHovered && (
               <svg
                 className="inline-block ml-2 w-4 h-4"

@@ -29,7 +29,7 @@ const Achievements = () => {
       }}
     >
       <h1 className={`${play.className} text-center pb-10`}>
-        Srila<span className="text-[#d17a29]"> Prabhupada's</span> Priceless
+        Srila<span className="text-[#d17a29]"> Prabhupada&apos;s</span> Priceless
         Gift to the World
       </h1>
       <div
