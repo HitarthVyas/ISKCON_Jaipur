@@ -3,6 +3,7 @@ import "./globals.css";
 import "./style.css";
 import Header from "../components/utilities/Header/Header";
 import SocialMediaSticky from "@/components/utilities/SocialMediaSticky";
+import FooterPage from "@/components/utilities/Footer/FooterPage";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <Header />
         <SocialMediaSticky />
         {children}
+        <FooterPage />
       </body>
     </html>
   );
