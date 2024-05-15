@@ -4,21 +4,23 @@ export const headerOptions = [
     options: [
       { subtitle: "Srila Prabhupada", link: "srila-prabhupada" },
       { subtitle: "ISKCON Jaipur", link: "iskcon-jaipur" },
-      { subtitle: "Gupt Vrindavan", link: "gupt-vrindavan" }
+      // { subtitle: "Gupt Vrindavan", link: "gupt-vrindavan" }
     ]
   },
   {
-    title: "Contribute",
+    title: "Donate",
     options: [
-      { subtitle: "Donate", link: "donation" },
-      { subtitle: "Grocery", link: "grocery" },
-      { subtitle: "Volunteer", link: "volunteer" }
+      { subtitle: "Sadhu Seva", link: "sadhu-seva" },
+      { subtitle: "Food For Life", link: "food-for-life" },
+      { subtitle: "Gita Daan", link: "gita-daan" },
+      { subtitle: "Nitya Seva", link: "nitya-seva" },
+      { subtitle: "Explore More..", link: "donation" },
     ]
   },
   {
     title: "Connect",
     options: [
-      { subtitle: "IYF", link: "iyf" },
+      { subtitle: "Youth Forum", link: "iyf" },
       { subtitle: "Bhakti Vriksha", link: "bhakti-vriksha" },
       { subtitle: "Kids & Teenager", link: "kids-teenager" },
       { subtitle: "Whatsapp", link: "whatsapp" }
