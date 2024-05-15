@@ -18,7 +18,7 @@ export default function GuestHouseMain() {
       <div style={{clipPath: 'polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%)'}} className="bg-[url('/Explore/GuestHouse/hilton.webp')] h-[100vh] mt-[65px]  bg-cover bg-center w-full">
         <div className="absolute flex flex-col items-center w-full top-[50vh] justify-center">
           <h1
-            className={font-bold text-white text-6xl md:text-7xl text-center  ${dancing.className}}
+            className={`font-bold text-white text-6xl md:text-7xl text-center  ${dancing.className}`}
             style={{
               textShadow:
                 "2px 2px black, 20px 20px 50px #d17a29, -20px -20px 50px #d17a29, -20px 20px 50px #d17a29, 20px -20px 50px black",
