@@ -96,10 +96,10 @@ export default function MainPoster() {
               <p
                 className={`text-[30px] py-[30px] font-medium text-[#ffffff] text-center ${oswa.className}`}
               >
-                "Support our food donation drive, combating hunger by offering
+                &quot;Support our food donation drive, combating hunger by offering
                 nutritious meals to the needy. Your backing holds transformative
                 potential. Let&apos;s unite for change, effecting tangible
-                results together!"
+                results together!&quot;
               </p>
             </div>
           </div>
