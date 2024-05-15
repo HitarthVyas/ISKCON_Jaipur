@@ -33,7 +33,7 @@ export default function LuxriesusSection()  {
           <div className="flex  gap-5 flex-col md:flex-row">
             <div className=" flex flex-col w-full md:w-1/2 ">
               <div className=" w-[100px] h-[90px] p-[10px]">
-                <img className="w-[60px] h-[70px] " src="/class.png"></img>
+                <img className="w-[60px] h-[70px] " src="/Explore/GuestHouse/class.png"></img>
               </div>
               <div className="">
                 <h2 className="text-[22px] text-[#091826] font-medium p-[10px]">
@@ -49,7 +49,7 @@ export default function LuxriesusSection()  {
             </div>
             <div className=" w-full md:w-1/2 ">
               <div className=" w-[100px] h-[90px] p-[10px] ">
-                <img className="w-[60px] h-[70px]" src="/Iife2.png"></img>
+                <img className="w-[60px] h-[70px]" src="/Explore/GuestHouse/Iife2.png"></img>
               </div>
               <div className="">
                 <h2 className="text-[22px] text-[#091826] font-medium p-[10px]">
@@ -69,7 +69,7 @@ export default function LuxriesusSection()  {
         {/* for image */}
         <div className=" w-full lg:w-1/2">
           <img
-            src="/istock.jpg"
+            src="/Explore/GuestHouse/istock.jpg"
             className="w-full h-full object-cover"
             alt="Image"
           />

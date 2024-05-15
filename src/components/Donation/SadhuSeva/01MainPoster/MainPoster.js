@@ -13,7 +13,7 @@ export default function MainPoster() {
 
   return (
     <>
-      <div className="relative bg-[url('/Sadhu.jpg')] h-[100vh] bg-cover bg-center w-full">
+      <div className="relative bg-[url('/Donation/SadhuSeva/Sadhu.jpg')] h-[100vh] bg-cover bg-center w-full mt-[60px]">
         <div className="absolute inset-0 flex items-center justify-center top-[25vh]">
           <button
             onClick={() => handleScrollToCard()}
@@ -21,7 +21,7 @@ export default function MainPoster() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            Donate for Brahman&apos;s
+            Donate for Brahman's
             {isHovered && (
               <svg
                 className="inline-block ml-2 w-4 h-4"

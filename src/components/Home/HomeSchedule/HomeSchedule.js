@@ -2,11 +2,53 @@
 import { useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Comfortaa } from "next/font/google";
-import { schedule } from "./scheduleData";
 
 const comfortaa = Comfortaa({
   subsets: ["latin"],
 })
+
+const schedule = [
+  {
+    time: "04:30 AM - 05:30 AM",
+    title: "Mangala Aarti",
+  },
+  {
+    time: "07:30 AM - 08:00 AM",
+    title: "Sringara Aarti & Guru Puja",
+  },
+  {
+    time: "08:00 AM – 09:00 AM",
+    title: "Srimad Bhagavatam",
+  },
+  {
+    time: "07:30 AM – 11:55 AM",
+    title: "Darshan Open",
+  },
+  {
+    time: "12:30 PM – 01:10 PM",
+    title: "Raj-Bhog Offering",
+  },
+  {
+    time: "01:10 PM – 04:30 PM",
+    title: "Darshan Closes",
+  },
+  {
+    time: "04:30 PM – 06:30 PM",
+    title: "Darshan Open",
+  },
+  {
+    time: "07:00 PM – 08:00 PM",
+    title: "Gaura Sandhya Arati",
+  },
+  {
+    time: "08:30 PM – 9:15 PM",
+    title: "Last Darshan of Day",
+  },
+  {
+    time: "09:45 PM – 04:30 AM",
+    title: "Darshan Closed",
+  },
+];
 
 const HomeSchedule = () => {
   const ref = useRef(null);
@@ -15,9 +57,8 @@ const HomeSchedule = () => {
   useEffect(() => {}, [isInView]);
 
   return (
-    <div className="h-[80vh] md:h-screen md:flex items-center bg-[#e5b776] justify-center md:gap-8 lg:gap-20">
-      <div className="flex items-center h-full justify-center flex-col">
-        <div>
+    <div className="h-[80vh] md:h-screen flex items-center bg-[#e5b776] justify-center md:gap-8 lg:gap-20">
+      <div className="">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, x: -100 }}
@@ -45,7 +86,6 @@ const HomeSchedule = () => {
               </div>
             </motion.div>
           ))}
-        </div>
         </div>
       </div>
       <motion.div

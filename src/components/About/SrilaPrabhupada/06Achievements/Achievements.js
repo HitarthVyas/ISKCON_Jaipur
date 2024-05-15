@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+"use client"
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Kanit, Playfair_Display } from "next/font/google";
