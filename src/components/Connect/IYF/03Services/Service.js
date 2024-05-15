@@ -51,7 +51,7 @@ const Service = () => {
                 style={{ rotateY: hoveredIndex === i ? 180 : 0, transformStyle: "preserve-3d" }}
               >
                 {service.subtopics.map((s, j) => (
-                  <li>
+                  <li key={j}>
                     {s}
                   </li>
                 ))}
