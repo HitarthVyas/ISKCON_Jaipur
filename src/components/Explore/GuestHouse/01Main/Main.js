@@ -1,7 +1,10 @@
 "use client";
-
+import Image from "next/image";
 import { Dancing_Script} from "next/font/google";
+import { FaRegStar } from "react-icons/fa";
 import {motion} from "framer-motion"
+
+
 
 const dancing = Dancing_Script({
   subsets: ["latin"],
