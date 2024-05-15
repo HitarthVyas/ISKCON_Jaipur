@@ -27,6 +27,7 @@ const Activities = () => {
         {activities.map((pt, i) => (
           <div
             className="relative w-72 pt-10"
+            key={i}
           >
             <div
               className="h-80 rounded-lg bg-white"
