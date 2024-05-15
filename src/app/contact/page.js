@@ -3,7 +3,8 @@
 import ContactIcons from "@/components/Contact/01ContactIcons/ContactIcons";
 import ContactForm from "@/components/Contact/02ContactForm/ContactForm";
 import Queries from "@/components/Contact/02Queries/Queries";
-import SocialMedia from "@/components/Contact/03SocialMedia/SocialMedia";
+import Maps from "@/components/Contact/03Map/Maps";
+import SocialMedia from "@/components/Contact/04SocialMedia/SocialMedia";
 
 const page = () => {
   return (
@@ -17,6 +18,7 @@ const page = () => {
         <ContactForm />
         <Queries />
       </div>
+      <Maps />
       <SocialMedia />
     </div>
   );
