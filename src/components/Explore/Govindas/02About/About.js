@@ -20,7 +20,7 @@ const About = () => {
           About Govindas
         </h2>
         <p className="pb-0 text-lg mt-5 font-medium text-justify">
-          We are happy to share with you that Govinda's Restaurant, Iskcon
+          We are happy to share with you that Govinda&apos;s Restaurant, Iskcon
           Jaipur is a pure Vegetarian (No Onion, No Garlic) North Indian, South
           Indian, Italian and Chinese Restaurant, Providing High quality and
           tasty food prasadam with hygiene to all our Local and International
@@ -28,8 +28,8 @@ const About = () => {
           in-house, well trained devotee cooks team.
         </p>
         <p className="pb-0 text-lg mt-2 font-medium text-justify">
-          100 % Pure and Vegetarian Cakes and Pastries made by Govinda's are
-          available at the De Cafe counter of Govinda's and available for the
+          100 % Pure and Vegetarian Cakes and Pastries made by Govinda&apos;s are
+          available at the De Cafe counter of Govinda&apos;s and available for the
           home delivery as well. At the De cafe snacks and sweet counter we
           provide a large number of snacks , juices, icecreams, pastries , Cakes
           and sweets etc.

@@ -31,7 +31,7 @@ const IntroYatra = () => {
         <div className="px-5 lg:w-10/12 text-justify text-base">
           <p style={{ textAlignLast: 'center' }}>
             Pilgrimage sites hold special significance for spiritual growth,
-            offering easy access to Lord Krishna's presence amidst the company
+            offering easy access to Lord Krishna&apos;s presence amidst the company
             of sages and abundant mercy. By visiting these sacred places, one
             can alleviate the burdens of sin and return enriched with spiritual
             benefits, ready to joyfully chant through life. ISKCON Jaipur

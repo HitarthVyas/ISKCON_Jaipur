@@ -18,7 +18,9 @@ const VrindavanaHaat = () => {
     <div>
       <div
         className="relative h-screen w-full bg-cover bg-top"
-        style={{ backgroundImage: "url('/Explore/VrindavanHaat/haat-banner.jpg')" }}
+        style={{
+          backgroundImage: "url('/Explore/VrindavanHaat/haat-banner.jpg')",
+        }}
       >
         <Link
           href="#contact"
@@ -38,7 +40,10 @@ const VrindavanaHaat = () => {
         </h1>
         <div className="flex gap-10 flex-wrap justify-center">
           {haatData.map((haat, i) => (
-            <div className="bg-white w-72 sm:w-80 p-2 flex items-center flex-col">
+            <div
+              key={i}
+              className="bg-white w-72 sm:w-80 p-2 flex items-center flex-col"
+            >
               <div className="relative w-72 h-72 sm:w-80 sm:h-80">
                 <Image
                   src={`/Explore/VrindavanHaat/${haat.image}`}
