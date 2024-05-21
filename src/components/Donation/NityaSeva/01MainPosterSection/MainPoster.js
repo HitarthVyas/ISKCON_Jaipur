@@ -102,7 +102,7 @@ const MainPoster = () => {
               <strong>
                 Nitya Seva is a monthly donation program, automatically debiting
                 your chosen amount each month. Your ongoing support sustains
-                Krishna's work. Choose your donation wisely and be a steady
+                Krishna&apos;s work. Choose your donation wisely and be a steady
                 beacon of devotion.
               </strong>
             </p>
