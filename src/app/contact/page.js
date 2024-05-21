@@ -14,11 +14,11 @@ const page = () => {
         className="w-full object-cover mt-16"
       />
       <ContactIcons />
-      <div className="sm:flex lg:flex-row flex-col lg:gap-0 gap-10 items-center justify-evenly pb-10">
-        <ContactForm />
+      <div className="flex flex-wrap gap-10 items-center justify-evenly pb-10">
         <Queries />
+        <Maps />
       </div>
-      <Maps />
+        {/* <ContactForm /> */}
       <SocialMedia />
     </div>
   );

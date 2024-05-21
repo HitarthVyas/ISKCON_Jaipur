@@ -65,7 +65,7 @@ const Details = () => {
           <b className="text-[#d17a29]">
             functions, programs, and spiritual groups.
           </b>{" "}
-          Place your order with Govinda&apos;s Restaurant Jaipur for{" "}
+          Place your order with Govinda's Restaurant Jaipur for{" "}
           <b className="text-[#d17a29]">doorstep delivery.</b>
         </p>
       </div>

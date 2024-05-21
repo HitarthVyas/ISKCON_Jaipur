@@ -17,7 +17,7 @@ const Intro = () => {
           </h1>
           <div className="text-sm lg:text-base text-justify">
             <p>
-              When a child&apos;s foundation is strong, it sets the stage for a
+              When a child's foundation is strong, it sets the stage for a
               lifetime of happiness. To help build this foundation, the ISKCON
               Temple in Jaipur has launched the{" "}
               <b className="text-[#d17a29]">
@@ -35,7 +35,7 @@ const Intro = () => {
               Enrolling your children in the ISKCON Value Education Online
               School is an investment in their future, providing them with the
               tools for a happy and meaningful life. This holistic approach to
-              education prepares children to face life&apos;s challenges confidently
+              education prepares children to face life's challenges confidently
               and wisely. Join us in this transformative journey, where
               education builds a strong foundation for life.
             </p>
