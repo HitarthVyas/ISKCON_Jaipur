@@ -55,7 +55,7 @@ const AchievementCard = ({ index, inView, achieve }) => {
       initial={{ y: 20, opacity: 0 }}
       animate={inView ? { y: 0, opacity: 1 } : {}}
       transition={{ duration: 0.5, delay: inView ? 0.1 * (index + 1) : 0 }}
-      className={`w-[150px] xl:w-[180px] text-center p-1 bg-black/5 rounded-lg h-[150px] sm:h-40 flex justify-center flex-col`}
+      className={`w-[150px] xl:w-[180px] text-center p-1 bg-black/10 rounded-lg h-[150px] sm:h-40 flex justify-center flex-col`}
     >
       <p className="mb-2 text-base xl:text-lg">{achieve.pre}</p>
       <h2 style={{ color: achieve.color }}>{achieve.title}</h2>

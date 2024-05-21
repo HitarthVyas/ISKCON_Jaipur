@@ -1,5 +1,7 @@
 "use client";
 import { Dancing_Script, Kanit, Playfair_Display } from "next/font/google";
+import Link from "next/link";
+import { donate } from "./donateData";
 
 const dancing = Dancing_Script({
   subsets: ["latin"],
@@ -19,39 +21,26 @@ const HomeDonate = () => {
       </div>
       <div>
         <div className="pt-10 flex md:flex-row flex-col justify-evenly gap-4">
-          <div className="flex flex-col items-center pb-4">
-            <div className="text-center shadow-md">
-              <div className="h-[120px] w-[200px] bg-[url('/Home/HomeExplore/homeSchedule.jpg')] bg-cover bg-center"></div>
-              <h1 className={`${dancing.className} pt-4 font-black`}>
-                Visit Temple
-              </h1>
-              <button className="px-2 py-1 bg-[#d17a29] mb-2 text-white rounded-full mt-1">
-                Donate
-              </button>
-            </div>
-          </div>
-          <div className="flex flex-col items-center pb-4">
-            <div className="text-center shadow-md">
-              <div className="h-[120px] w-[200px] bg-[url('/Home/HomeExplore/homeSchedule.jpg')] bg-cover bg-center"></div>
-              <h1 className={`${dancing.className} pt-4 font-black`}>
-                Guest House
-              </h1>
-              <button className="px-2 py-1 bg-[#d17a29] mb-2 text-white rounded-full mt-1">
-                Donate
-              </button>
-            </div>
-          </div>
-          <div className="flex flex-col items-center pb-10">
-            <div className="text-center shadow-md">
-              <div className="h-[120px] w-[200px] bg-[url('/Home/HomeExplore/homeSchedule.jpg')] bg-cover bg-center"></div>
-              <h1 className={`${dancing.className} pt-4 font-black`}>
-                Govinda&apos;s
-              </h1>
-              <button className="px-2 py-1 bg-[#d17a29] mb-2 text-white rounded-full mt-1">
-                Donate
-              </button>
-            </div>
-          </div>
+          {donate.map((d, i) => (
+            <Link
+              href={d.link}
+              key={i}
+              className="flex flex-col items-center pb-4 text-gray-600 hover:text-gray-600 hover:no-underline"
+            >
+              <div className="text-center shadow-md mt-2 ml-2 hover:mt-0 hover:ml-0 hover:mr-2 hover:mb-2 transition-all duration-300">
+                <img
+                  src={d.image}
+                  className="h-[120px] w-[220px] object-cover object-center"
+                />
+                <h1 className={`${dancing.className} pt-4 font-black px-2`}>
+                  {d.title}
+                </h1>
+                <button className="px-2 py-1 bg-[#d17a29] mb-2 text-white rounded-full mt-1">
+                  Donate
+                </button>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </div>

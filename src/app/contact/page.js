@@ -10,8 +10,8 @@ const page = () => {
   return (
     <div className="bg-white">
       <img
-        src="https://t4.ftcdn.net/jpg/04/81/72/77/360_F_481727770_1u2ylNpie8WRosMVbv1COXDnnEK6ofwh.jpg"
-        className="w-full object-cover"
+        src="/Contact/Contact_Us.png"
+        className="w-full object-cover mt-16"
       />
       <ContactIcons />
       <div className="sm:flex lg:flex-row flex-col lg:gap-0 gap-10 items-center justify-evenly pb-10">

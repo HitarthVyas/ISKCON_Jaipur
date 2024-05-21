@@ -1,16 +1,21 @@
 "use client";
-
 import Intro from "@/components/Connect/KidsAndTeenager/01Intro/Intro";
 import Features from "@/components/Connect/KidsAndTeenager/02Features/Features";
-import Schedule from "@/components/Connect/KidsAndTeenager/Schedule/Schedule";
+import Testimonial from "@/components/Connect/KidsAndTeenager/03Testimonial/Testimonial";
+import { Playfair } from "next/font/google";
 import Link from "next/link";
+
+const play = Playfair({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+})
 
 const page = () => {
   return (
     <div>
       <div
         className="relative h-screen w-full bg-cover bg-top"
-        style={{ backgroundImage: "url('/IJP/ijpBanner.jpg')" }}
+        style={{ backgroundImage: "url('/Connect/Kids/kids-classes.png')" }}
       >
         <Link
           href="#contact"
@@ -23,7 +28,16 @@ const page = () => {
       </div>
       <Intro />
       <Features />
-      <Schedule />
+      <Testimonial />
+      <h2
+        className={`font-medium text-orange-900 text-center py-10`}
+        id="contact"
+      >
+        <span className={`${play.className} text-5xl font-semibold`}>
+          CONTACT US:
+        </span>{" "}
+        9819413260
+      </h2>
     </div>
   );
 };

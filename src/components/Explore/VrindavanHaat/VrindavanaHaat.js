@@ -11,18 +11,18 @@ const dancing = Dancing_Script({
 const play = Playfair({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
-})
+});
 
 const VrindavanaHaat = () => {
   return (
     <div>
       <div
         className="relative h-screen w-full bg-cover bg-top"
-        style={{ backgroundImage: "url('/IJP/ijpBanner.jpg')" }}
+        style={{ backgroundImage: "url('/Explore/VrindavanHaat/haat-banner.jpg')" }}
       >
         <Link
           href="#contact"
-          className="absolute w-full flex justify-center top-[80vh] no-underline hover:no-underline active:no-underline"
+          className="absolute w-full hover:scale-110 transition-all duration-300 flex justify-center top-[80vh] no-underline hover:no-underline active:no-underline"
         >
           <button className="py-3 px-6 rounded-full text-xl bg-[#d17a29] text-white font-semibold top-[80vh]">
             Contact Us
@@ -38,7 +38,7 @@ const VrindavanaHaat = () => {
         </h1>
         <div className="flex gap-10 flex-wrap justify-center">
           {haatData.map((haat, i) => (
-            <div className="bg-white w-72 sm:w-80 p-2 flex items-center flex-col" key={i}>
+            <div className="bg-white w-72 sm:w-80 p-2 flex items-center flex-col">
               <div className="relative w-72 h-72 sm:w-80 sm:h-80">
                 <Image
                   src={`/Explore/VrindavanHaat/${haat.image}`}
@@ -48,7 +48,9 @@ const VrindavanaHaat = () => {
                   className="object-scale-down"
                 />
               </div>
-              <button className={`font-medium px-3 py-1 bg-[#d17a29] rounded-full text-white m-1`}>
+              <button
+                className={`font-medium px-3 py-1 bg-[#d17a29] rounded-full text-white m-1`}
+              >
                 {haat.title}
               </button>
             </div>
@@ -59,7 +61,10 @@ const VrindavanaHaat = () => {
         className={`font-medium text-orange-900 text-center py-10`}
         id="contact"
       >
-        <span className={`${play.className} text-5xl font-semibold`}>CONTACT US:</span> 9876543210
+        <span className={`${play.className} text-5xl font-semibold`}>
+          CONTACT US:
+        </span>{" "}
+        9876543210
       </h2>
     </div>
   );

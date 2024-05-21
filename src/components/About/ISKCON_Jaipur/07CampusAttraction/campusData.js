@@ -1,7 +1,7 @@
 export const campus = [
   {
     title: 'Community Hall',
-    campusImg: "https://www.iskconjaipur.com/uploads/9/8/1/1/9811407/dsc-0444_orig.jpg",
+    campusImg: "/Home/commhall.jpg",
   },
   {
     title: 'Bhaktivdanta Bhavan',
@@ -13,10 +13,10 @@ export const campus = [
   },
   {
     title: "Govinda's",
-    campusImg: "https://www.iskconjaipur.com/uploads/9/8/1/1/9811407/dsc-0444_orig.jpg",
+    campusImg: "/Explore/Govindas/govindas.jpg",
   },
   {
-    title: "D' Cafe",
+    title: "Vrindavan Haat",
     campusImg: "https://www.iskconjaipur.com/uploads/9/8/1/1/9811407/dsc-0444_orig.jpg",
   },
   {

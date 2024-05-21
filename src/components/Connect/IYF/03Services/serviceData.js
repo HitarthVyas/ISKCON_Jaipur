@@ -1,7 +1,7 @@
 export const services = [
   {
     domain: "Mental Well-Being",
-    image: "https://www.airswift.com/hubfs/Imported_Blog_Media/mental-health-wellness-during-covid-19.jpg#keepProtocol",
+    image: "well-being.jpg",
     subtopics: [
       "Anxiety Management",
       "Stress Reduction",
@@ -12,7 +12,7 @@ export const services = [
   },
   {
     domain: "Academics and Career",
-    image: "https://prolifiko.com/wp-content/uploads/2018/08/6-min.jpg",
+    image: "academics.jpg",
     subtopics: [
       "Goal Setting",
       "Study Skills",
@@ -23,7 +23,7 @@ export const services = [
   },
   {
     domain: "Relationship and Social Dealings",
-    image: "https://www.nimble.com/blog/wp-content/uploads/2013/07/the-importance-of-building-and-maintaining-business-relationships.jpg",
+    image: "relation.jpg",
     subtopics: [
       "Communication Skills",
       "Conflict Resolution",
@@ -34,7 +34,7 @@ export const services = [
   },
   {
     domain: "Substance Abuse Prevention",
-    image: "https://images.onlymyhealth.com/imported/images/2022/March/17_Mar_2022/big_subab.jpg",
+    image: "addict.jpg",
     subtopics: [
       "Prevention Strategies",
       "Understanding Addiction",
@@ -45,7 +45,7 @@ export const services = [
   },
   {
     domain: "Emergency Mental Health Support",
-    image: "https://www.banyanmentalhealth.com/wp-content/uploads/2020/09/blog-4-1200x480.jpg",
+    image: "emergency.jpg",
     subtopics: [
       "Suicide Prevention",
       "Crisis Management",
@@ -56,7 +56,7 @@ export const services = [
   },
   {
     domain: "Develop Leadership",
-    image: "/Connect/IYF/activities/campus-outreach.jpg",
+    image: "leadership.jpg",
     subtopics: [
       "Leadership Skills",
       "Building Confidence",
@@ -67,7 +67,7 @@ export const services = [
   },
   {
     domain: "Cultural and Diversity Counseling",
-    image: "/Connect/IYF/activities/campus-outreach.jpg",
+    image: "diversity.png",
     subtopics: [
       "Exploring Cultural Identity",
       "Diversity and Inclusion Education",
@@ -78,7 +78,7 @@ export const services = [
   },
   {
     domain: "Health and Wellness Counseling",
-    image: "/Connect/IYF/activities/campus-outreach.jpg",
+    image: "nutrition.jpg",
     subtopics: [
       "Nutrition Education",
       "Physical Activity Promotion",

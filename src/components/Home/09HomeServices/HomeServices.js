@@ -13,7 +13,7 @@ const dancing = Dancing_Script({
 
 const HomeServices = () => {
   return (
-    <div className="bg-[#d17a29] text-white min-h-[60vh]">
+    <div className="bg-[#d17a29] text-white pb-10">
       <div className={`pt-16 text-center ${architects.className}`}>
         <h1 className="text-6xl font-[400]">Our Services</h1>
       </div>
@@ -28,7 +28,7 @@ const HomeServices = () => {
           </div>
           <div className="p-10 flex flex-col items-center">
             <div
-              className="h-[150px] w-[175px] bg-[url('/Home/HomeExplore/homeSchedule.jpg')] bg-cover bg-center"
+              className="h-[150px] w-[175px] bg-[url('/Home/commhall.jpg')] bg-cover bg-center"
               style={{ clipPath: "polygon(0 0, 100% 20%, 100% 100%, 0 80%)" }}
             ></div>
             <h1 className={`${dancing.className} rotate-[9deg]`}>Community Hall</h1>

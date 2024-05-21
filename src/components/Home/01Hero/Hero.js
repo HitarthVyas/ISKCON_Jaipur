@@ -1,6 +1,7 @@
 "use client";
 import { Dancing_Script } from "next/font/google";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const dancing = Dancing_Script({
   subsets: ["latin"],
@@ -44,16 +45,18 @@ const Hero = () => {
               Temple | Jaipur, Mansarovar
             </motion.span>
           </div>
-          <motion.button
-            type="button"
-            className="absolute bottom-[20vh] text-white bg-gradient-to-r bg-[#d17a29] rounded-full hover:from-pink-500 hover:to-yellow-500 font-medium text-base lg:text-xl px-4 py-2 text-center flex gap-2 items-center"
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.6 }}
-          >
-            <img src="/Home/Hero/location.svg" />
-            <span>Location</span>
-          </motion.button>
+          <Link href='/contact/#map' className="absolute bottom-[20vh] hover:no-underline">
+            <motion.button
+              type="button"
+              className=" text-white bg-gradient-to-r bg-[#d17a29] rounded-full hover:from-pink-500 hover:to-yellow-500 font-medium text-base lg:text-xl px-4 py-2 text-center flex gap-2 items-center"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.6 }}
+            >
+              <img src="/Home/Hero/location.svg" />
+              <span>Location</span>
+            </motion.button>
+          </Link>
         </div>
       </div>
     </>

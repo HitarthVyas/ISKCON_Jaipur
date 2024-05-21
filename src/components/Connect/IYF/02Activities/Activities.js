@@ -34,7 +34,7 @@ const Activities = () => {
             >
               <div>
                 <h4 className="text-center py-2 font-medium">{pt.title}</h4>
-                <img src={pt.image} className="object-cover object-left h-64" />
+                <img src={pt.image} className="object-cover object-left h-64 w-full" />
               </div>
             </div>
           </div>

@@ -1,14 +1,16 @@
 "use client";
 
 import Features from "@/components/Explore/Govindas/01Features/Features";
-import About from "@/components/Explore/Govindas/About/About";
+import About from "@/components/Explore/Govindas/02About/About";
+import Parties from "@/components/Explore/Govindas/03Parties/Parties";
+import Details from "@/components/Explore/Govindas/04Details.js/Details";
 
 const page = () => {
   return (
     <div>
       <div
         className="relative w-full h-screen bg-cover bg-top"
-        style={{ backgroundImage: "url('/IJP/ijpBanner.jpg')" }}
+        style={{ backgroundImage: "url('/Explore/Govindas/govindas.jpg')" }}
       >
         <div className="absolute h-screen inset-0 bg-black/50"></div>
         <div className="absolute top-[40vh] w-full flex justify-center">
@@ -17,6 +19,8 @@ const page = () => {
       </div>
       <Features />
       <About />
+      <Parties />
+      <Details />
     </div>
   );
 };

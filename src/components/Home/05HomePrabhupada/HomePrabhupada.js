@@ -1,6 +1,7 @@
 "use client";
 import { motion, useInView } from "framer-motion";
 import { Satisfy } from "next/font/google";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 const satisfy = Satisfy({
@@ -26,30 +27,30 @@ const HomePrabhupada = () => {
         >
           <p
             style={{
-              textShadow:
-                "1px 1px 2px black, 0 0 1em black, 0 0 0.2em #d17a29",
+              textShadow: "1px 1px 2px black, 0 0 1em black, 0 0 0.2em #d17a29",
             }}
           >
             HDG AC Bhaktivedanta{" "}
           </p>
           <p
             style={{
-              textShadow:
-                "1px 1px 2px black, 0 0 1em black, 0 0 0.2em #d17a29",
+              textShadow: "1px 1px 2px black, 0 0 1em black, 0 0 0.2em #d17a29",
             }}
           >
             Swami Srila Prabhupada
           </p>
         </motion.section>
-        <motion.button
-        ref={ref}
-          className="px-5 rounded-full h-20 bg-[#ff7a29]"
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: isInView ? 1 : 0, x: isInView? 0 : 100 }}
-          transition={{ delay: 1.5 }}
-        >
-          <img src="/Home/HomePrabhupada/right.svg" className="w-10" />
-        </motion.button>
+        <Link href='/srila-prabhupada'>
+          <motion.button
+            ref={ref}
+            className="px-5 rounded-full h-20 bg-[#ff7a29]"
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : 100 }}
+            transition={{ delay: 1.5 }}
+          >
+            <img src="/Home/HomePrabhupada/right.svg" className="w-10" />
+          </motion.button>
+        </Link>
       </div>
     </div>
   );

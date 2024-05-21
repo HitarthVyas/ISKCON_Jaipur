@@ -7,10 +7,10 @@ export const featuresGovindas = [
     title: "Take-Aways",
     icon: "/Explore/Govindas/icons/takeAway.svg"
   },
-  // {
-  //   title: "Home/Office Delivery",
-  //   icon: "/Explore/Govindas/icons/"
-  // },
+  {
+    title: "Food Delivery",
+    icon: "/Explore/Govindas/icons/delivery.svg"
+  },
   {
     title: "Swiggy",
     icon: "/Explore/Govindas/icons/swiggy.svg"

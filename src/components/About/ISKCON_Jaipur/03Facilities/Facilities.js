@@ -17,7 +17,7 @@ const Facilities = () => {
   });
 
   return (
-    <div className="py-14 px-10 2xl:flex 2xl:flex-col 2xl:items-center">
+    <div className="py-14 px-10 2xl:flex 2xl:flex-col 2xl:items-center bg-[#d17a29] text-white">
       <h1
         className={`${ptserif.className} pb-6 font-[400] text-center text-4xl`}
         // style={{ textShadow: "20px 20px 40px #d17a29, -20px 20px 40px #d17a29, 20px -20px 40px #d17a29, -20px -20px 40px #d17a29" }}

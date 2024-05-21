@@ -37,7 +37,7 @@ const Service = () => {
             >
               <div>
                 <h4 className="text-center py-2 font-medium h-[84px]">{service.domain}</h4>
-                <img src={service.image} className="object-cover object-left h-64" />
+                <img src={'/Connect/IYF/councelling/'+service.image} className="object-cover w-full bg-white h-64" />
               </div>
             </motion.div>
             <motion.div

@@ -5,11 +5,11 @@ export const activities = [
   },
   {
     title: "Youth Festivals",
-    image: "/Connect/IYF/activities/campus-outreach.jpg",
+    image: "/Connect/IYF/activities/festival.jpg",
   },
   {
     title: "Youth Tours",
-    image: "/Connect/IYF/activities/campus-outreach.jpg",
+    image: "/Connect/IYF/activities/camp.jpg",
   },
   {
     title: "Personal Assistance",

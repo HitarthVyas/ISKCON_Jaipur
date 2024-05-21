@@ -38,7 +38,7 @@ const Facilities = () => {
             key={index}
             className="flex flex-col items-center"
           >
-            <div className="w-[90px] h-[90px] flex justify-center items-center mb-2 border-2 border-[#ffd6af] rounded-full">
+            <div className="w-[90px] h-[90px] flex justify-center items-center mb-2 border-2  rounded-full">
               <img
                 src={"/Connect/Kids/icons/" + facility.icon}
                 alt={facility.text}

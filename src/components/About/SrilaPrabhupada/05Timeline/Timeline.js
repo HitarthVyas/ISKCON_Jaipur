@@ -68,7 +68,7 @@ const TimelineItem = ({ journey, index }) => {
           transition={{ duration: 1 }}
         >
           <time className="font-mono italic text-[#e5b776] text-xl font-bold">{journey.year}</time>
-          <p>{journey.description}</p>
+          <p className="font-medium">{journey.description}</p>
         </motion.div>
       </div>
       <hr />

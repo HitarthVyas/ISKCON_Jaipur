@@ -12,7 +12,7 @@ export const headerOptions = [
     options: [
       { subtitle: "Sadhu Seva", link: "sadhu-seva" },
       { subtitle: "Food For Life", link: "food-for-life" },
-      { subtitle: "Gita Daan", link: "gita-daan" },
+      { subtitle: "Gau Seva", link: "gau-seva" },
       { subtitle: "Nitya Seva", link: "nitya-seva" },
       { subtitle: "Explore More..", link: "donation" },
     ]
@@ -23,7 +23,7 @@ export const headerOptions = [
       { subtitle: "Youth Forum", link: "iyf" },
       { subtitle: "Bhakti Vriksha", link: "bhakti-vriksha" },
       { subtitle: "Kids & Teenager", link: "kids-teenager" },
-      { subtitle: "Whatsapp", link: "whatsapp" }
+      // { subtitle: "Whatsapp", link: "whatsapp" }
     ]
   },
   {
@@ -32,7 +32,7 @@ export const headerOptions = [
       { subtitle: "Temple", link: "iskcon-jaipur" },
       { subtitle: "Guest House", link: "guest-house" },
       { subtitle: "Govinda's", link: "govindas" },
-      { subtitle: "D' Cafe", link: "dcafe" },
+      // { subtitle: "D' Cafe", link: "dcafe" },
       { subtitle: "Vrindavan Haat", link: "vrindavan-haat" },
       { subtitle: "Gau Shala", link: "gau-shala" }
     ]
@@ -41,7 +41,7 @@ export const headerOptions = [
     title: "Services",
     options: [
       { subtitle: "House Program", link: "house-program" },
-      { subtitle: "Community Hall", link: "community-hall" },
+      { subtitle: "Community Hall", link: "contact/#queries" },
       { subtitle: "Puja", link: "puja" },
       { subtitle: "Yatra", link: "yatra" },
       { subtitle: "Life Member", link: "life-member" }

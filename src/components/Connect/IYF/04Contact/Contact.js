@@ -19,7 +19,7 @@ const Contact = () => {
             </p>
           </div>
           <div className="mt-7">
-            <h5 className="pb-2">Offline Classes:</h5>
+            <h5 className="pb-2">Online Classes:</h5>
             <p className="text-base font-bold mb-0">
               <span>Hitakara Vamana Das: </span>
               <span>+91 987654321</span>
