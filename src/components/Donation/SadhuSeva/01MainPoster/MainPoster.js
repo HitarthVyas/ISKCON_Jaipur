@@ -9,7 +9,7 @@ const handleScrollToCard = () => {
 };
 
 export default function MainPoster() {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(false); 
 
   return (
     <>
@@ -39,6 +39,8 @@ export default function MainPoster() {
           </button>
         </div>
       </div>
+      <div className="relative bg-[url('/Donation/SadhuSeva/curve.svg')] h-[150px] bg-cover bg-center w-full mt-[-150px]"></div>
+      
     </>
   );
 }

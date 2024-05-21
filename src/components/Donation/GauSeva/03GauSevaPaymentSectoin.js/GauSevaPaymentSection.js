@@ -29,11 +29,10 @@ const handleCopy = (text) => {
     });
 };
 
-const SadhuPaymentSection = ({ paymentSectionRef }) => {
+const GauSevaPaymentSection = () => {
   return (
     <div
       id="paymentSection"
-      ref={paymentSectionRef}
       className="md:mx-16 sm:mx-9 mx-[10px] flex flex-col lg:flex-row py-[20px] bg-[#400669] rounded-lg"
     >
       <div className="flex flex-col items-center justify-center w-full lg:w-1/2 pb-[20px]">
@@ -92,4 +91,4 @@ const SadhuPaymentSection = ({ paymentSectionRef }) => {
   );
 };
 
-export default SadhuPaymentSection;
+export default GauSevaPaymentSection;
