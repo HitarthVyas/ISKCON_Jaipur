@@ -16,7 +16,7 @@ const Benefits = () => {
       </h1>
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-10 max-w-screen-xl m-auto place-items-center">
         {benefits.map((benefit, i) => (
-          <div className="block max-w-80 p-2 bg-transparent rounded-sm text-white hover:rounded hover:bg-white hover:text-gray-900 transition-all duration-500">
+          <div key={i} className="block max-w-80 p-2 bg-transparent rounded-sm text-white hover:rounded hover:bg-white hover:text-gray-900 transition-all duration-500">
             <h5 className="mb-2 text-2xl text-center font-medium tracking-tight">
               {benefit.title}
             </h5>
