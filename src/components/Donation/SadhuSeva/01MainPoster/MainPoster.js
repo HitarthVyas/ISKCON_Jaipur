@@ -9,7 +9,7 @@ const handleScrollToCard = () => {
 };
 
 export default function MainPoster() {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(false); 
 
   return (
     <>
