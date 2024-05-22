@@ -1,6 +1,6 @@
 export const activities = [
   {
-    title: "Campus Outreach",
+    title: "Outreach Programs",
     image: "/Connect/IYF/activities/campus-outreach.jpg",
   },
   {
@@ -17,6 +17,6 @@ export const activities = [
   },
   {
     title: "Student Residencies",
-    image: "/Connect/IYF/activities/campus-outreach.jpg",
+    image: "/Connect/IYF/activities/residency.jpg",
   },
 ]

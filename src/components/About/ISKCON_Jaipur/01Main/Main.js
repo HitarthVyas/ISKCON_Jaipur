@@ -22,7 +22,7 @@ const IJPHero = () => {
   return (
     <div
       className="relative h-[95vh] mt-[65px] w-full"
-      style={{ background: "url('/IJP/ijpBanner.jpg') center/cover" }}
+      style={{ background: "url('/IJP/temple-day.jpg') top/cover" }}
     >
       <div className="absolute h-[95vh] inset-0 bg-black/60"></div>
       <motion.div

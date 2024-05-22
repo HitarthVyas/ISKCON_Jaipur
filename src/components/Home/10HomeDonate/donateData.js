@@ -6,7 +6,7 @@ export const donate = [
   },
   {
     title: "Gau Seva",
-    image: "/Donation/FoodForNeed/BannerforHome.jpg",
+    image: "/Donation/GauSeva/pr.jpeg",
     link: "gau-seva",
   },
   {

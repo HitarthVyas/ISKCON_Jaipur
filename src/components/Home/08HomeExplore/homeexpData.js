@@ -6,7 +6,7 @@ export const exps = [
   },
   {
     title: "Guest House",
-    image: "/Home/HomeExplore/homeSchedule.jpg",
+    image: "/Explore/GuestHouse/insideGuestHouse.jpg",
     link: "guest-house",
   },
   {
@@ -15,13 +15,13 @@ export const exps = [
     link: "govindas",
   },
   {
-    title: "Vrindavan Haat",
-    image: "/Explore/VrindavanHaat/vrindavan-haat.jpg",
-    link: "vrindavan-haat",
+    title: "Gau Shala",
+    image: "/Donation/GauSeva/pr.jpeg",
+    link: "gau-shala",
   },
   {
-    title: "Gau Shala",
-    image: "/Home/HomeExplore/homeSchedule.jpg",
-    link: "gau-shala",
+    title: "Vrindavan Haat (Gift Shop)",
+    image: "/Explore/VrindavanHaat/vrindavan-haat.jpg",
+    link: "vrindavan-haat",
   },
 ]

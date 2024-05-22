@@ -15,7 +15,7 @@ const page = () => {
     <div>
       <div
         className="relative h-screen w-full bg-cover bg-top"
-        style={{ backgroundImage: "url('/Connect/Kids/kids-classes.png')" }}
+        style={{ backgroundImage: "url('/Connect/Kids/kids-classes.jpg')" }}
       >
         <Link
           href="#contact"

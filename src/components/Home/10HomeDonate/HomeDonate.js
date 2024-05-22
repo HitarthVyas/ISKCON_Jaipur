@@ -20,7 +20,7 @@ const HomeDonate = () => {
         <h1 className="text-6xl font-[900]">Sri Sri Giridhari Dauji</h1>
       </div>
       <div>
-        <div className="pt-10 flex md:flex-row flex-col justify-evenly gap-4">
+        <div className="pt-10 flex md:flex-row flex-col justify-evenly gap-4 max-w-screen-2xl m-auto">
           {donate.map((d, i) => (
             <Link
               href={d.link}

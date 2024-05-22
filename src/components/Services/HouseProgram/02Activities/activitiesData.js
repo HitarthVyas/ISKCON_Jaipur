@@ -9,28 +9,28 @@ export const activities = [
   {
     title: "Cooking",
     image:
-      "https://iskconchowpatty.com/wp-content/uploads/2022/01/Cooking-Serving.jpg",
+      "/Services/HouseProgram/cook-house.jpg",
     details:
       "Preparing sacred offerings and partaking in delicious prasadam, through cooking, offering, and consuming blessed food.",
   },
   {
     title: "Kirtan",
     image:
-      "https://iskconchowpatty.com/wp-content/uploads/2022/01/Learning-Music.jpg",
+      "/Services/HouseProgram/kirtan-house.jpg",
     details:
       "Enjoy the soul-stirring devotional melodies played on traditional instruments, filling the heart with joy and spiritual resonance.",
   },
   {
     title: "Meditation",
     image:
-      "https://iskconchowpatty.com/wp-content/uploads/2022/01/Chandan-seva.jpg",
+    "/IJP/ijpBanner.jpg",
     details:
       "Meditate on the Hare Krishna Maha Mantra, channeling spiritual energy and finding inner peace through devotion and meditation practice.",
   },
   {
     title: "Nourishing Lectures",
     image:
-      "https://iskconchowpatty.com/wp-content/uploads/2022/01/Meditation.jpg",
+      "/Services/HouseProgram/lecture-house.jpg",
     details:
       "Uplifting spiritual talks, fostering growth and understanding in the pursuit of spiritual enlightenment and inner peace.",
   },

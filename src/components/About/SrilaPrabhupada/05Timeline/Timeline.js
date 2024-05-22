@@ -17,7 +17,15 @@ const Timeline = () => {
           "linear-gradient(180deg, rgba(100, 100, 100, 0.68) 0%, rgba(175, 175, 175, 0.68) 100%), url(/SrilaPrabhupada/his-divine-grace.jpg) center/cover",
       }}
     >
-      <h1 className={`${play.className} text-center text-white pt-10 px-4 text-4xl leading-[3.25rem]`} style={{ textShadow: '5px 5px 20px #d17a29, -5px 5px 20px #d17a29, 5px -5px 20px #d17a29' }}>GLorious Journey of Srila Prabhupada</h1>
+      <h1
+        className={`${play.className} text-center text-white pt-10 px-4 text-4xl leading-[3.25rem]`}
+        style={{
+          textShadow:
+            "5px 5px 20px #d17a29, -5px 5px 20px #d17a29, 5px -5px 20px #d17a29",
+        }}
+      >
+        GLorious Journey of Srila Prabhupada
+      </h1>
       <ul className="p-5 mb-0 text-white timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         {journeyData.map((journey, index) => (
           <TimelineItem key={index} journey={journey} index={index} />
@@ -67,7 +75,9 @@ const TimelineItem = ({ journey, index }) => {
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
           transition={{ duration: 1 }}
         >
-          <time className="font-mono italic text-[#e5b776] text-xl font-bold">{journey.year}</time>
+          <time className="font-mono italic text-[#e5b776] text-xl font-bold">
+            {journey.year}
+          </time>
           <p className="font-medium">{journey.description}</p>
         </motion.div>
       </div>

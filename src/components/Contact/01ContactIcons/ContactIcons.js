@@ -23,7 +23,7 @@ const ContactIcons = () => {
           </div>
           <div>
             <h5 className="m-0 mb-1">Call Us</h5>
-            <p className="m-0 text-sm">+91 96496 89649</p>
+            <p className="m-0 text-sm">+91 9649689649</p>
           </div>
         </div>
 
@@ -34,10 +34,10 @@ const ContactIcons = () => {
           <div>
             <h5 className="m-0 mb-1">Gita Classes</h5>
             <p className="m-0 text-xs">
-              <b>Youth:</b> +91 6378 588 289
+              <b>Youth:</b> +91 6378588289
             </p>
             <p className="m-0 text-xs">
-              <b>Elders &amp; Kids:</b> +91 6378 588 289
+              <b>Elders &amp; Kids:</b> +91 9649689649
             </p>
           </div>
         </div>

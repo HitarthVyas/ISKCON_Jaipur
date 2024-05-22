@@ -1,6 +1,8 @@
 "use client";
 
 import { Dancing_Script, Playfair_Display } from "next/font/google";
+import { homeActivities } from "./homeActivitiesData";
+import Link from "next/link";
 
 const dancing = Dancing_Script({
   subsets: ["latin"],
@@ -18,52 +20,29 @@ const HomeActivities = () => {
         <h1 className="text-6xl font-[500]">Connect With Us</h1>
       </div>
       <div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 text-center">
-          <div className="p-10 flex flex-col items-center">
-            <div
-              className="h-[350px] relative w-full bg-[url('/Home/HomeExplore/homeSchedule.jpg')] bg-cover bg-center"
-              style={{
-                textShadow:
-                  "0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black",
-              }}
+        <div className="grid grid-cols-1 lg:grid-cols-3 text-center max-w-screen-2xl m-auto">
+          {homeActivities.map((activity, i) => (
+            <Link
+              key={i}
+              href={activity.link}
+              className="p-10 flex flex-col items-center text-white no-underline hover:text-white hover:no-underline"
             >
-              <h1
-                className={`absolute bottom-2 w-full ${playfair.className} pt-4 font-medium px-4`}
+              <div
+                className="h-[350px] relative w-full bg-cover bg-center"
+                style={{
+                  backgroundImage: `url(${activity.image})`,
+                  textShadow:
+                    "0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black",
+                }}
               >
-                ISKCON Youth Forum
-              </h1>
-            </div>
-          </div>
-          <div className="p-10 flex flex-col items-center">
-            <div
-              className="h-[350px] relative w-full bg-[url('/Connect/Kids/kids-classes.png')] bg-cover bg-center"
-              style={{
-                textShadow:
-                  "0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black",
-              }}
-            >
-              <h1
-                className={`${playfair.className} absolute bottom-2 w-full pt-4 font-medium px-4`}
-              >
-                Kids And Teenager Classes
-              </h1>
-            </div>
-          </div>
-          <div className="p-10 flex flex-col items-center">
-            <div
-              className="relative h-[350px] w-full bg-[url('/Connect/BhaktiVriksha/bhakti-vriksha.jpg')] bg-cover bg-center"
-              style={{
-                textShadow:
-                  "0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black",
-              }}
-            >
-              <h1
-                className={`${playfair.className} absolute bottom-2 w-full pt-4 font-medium px-4`}
-              >
-                Bhakti Vriksha
-              </h1>
-            </div>
-          </div>
+                <h1
+                  className={`absolute bottom-2 w-full ${playfair.className} pt-4 font-medium px-4`}
+                >
+                  {activity.title}
+                </h1>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </div>

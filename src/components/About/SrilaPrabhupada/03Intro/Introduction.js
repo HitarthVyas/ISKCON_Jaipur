@@ -18,8 +18,7 @@ const Introduction = () => {
         <div className="max-w-[450px] px-4 md:max-w-[750px] lg:max-w-6xl">
           <div className="flex md:flex-row flex-col lg:gap-16 gap-10 items-center justify-center">
             <img
-              // src="https://www.krishnapath.org/ext/art/sp/compress/Prabhupada-the-lion-guru-to-whome-all-heads-bow.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              src="https://www.krishnapath.org/ext/art/sp/Srila%20Prabhupada%20high-res%20(11).jpg"
+              src="/SrilaPrabhupada/prabhupada-intro.jpg"
               className="max-h-[400px]"
             />
             <div className={`text-gray-700 text-justify text-sm md:text-lg`}>

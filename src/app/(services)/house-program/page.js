@@ -35,7 +35,7 @@ const page = () => {
         <span className={`${play.className} text-5xl font-semibold`}>
           CONTACT US:
         </span>{" "}
-        9876543210
+        9649689649
       </h2>
     </div>
   );

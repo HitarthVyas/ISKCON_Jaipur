@@ -30,13 +30,13 @@ const FooterPage = () => {
               className={` text-center md:text-left text-[40px] ${merri.className} mb-0 text-[#ffffff] font-bold max-[721px]:pl-[0px]  
               pl-[80px]  `}
               style={{
-                textShadow: "0em 0em 0.3em #fbba60;",
+                textShadow: "0em 0em 0.3em #fbba60",
               }}
             >
               Get in touch
             </p>
           </div>
-          <div class=" basis-1/2  flex justify-center items-center">
+          <div className=" basis-1/2  flex justify-center items-center">
             <button
               className={`bg-[#FCD6A0] font-medium text-[20px] text-[#870909] py-2 px-4 md:py-2 md:px-4 rounded-full drop-shadow-xl ${merri.className} hover:scale-105 transition-transform`}
             >
@@ -58,7 +58,7 @@ const FooterPage = () => {
                     </div>
                     <div className="  flex-1">
                       <h3
-                        class={`text-xl font-semibold leading-6 text-white flex items-center justify-center ${merri.className}`}
+                        className={`text-xl font-semibold leading-6 text-white flex items-center justify-center ${merri.className}`}
                       >
                         Office
                       </h3>
@@ -77,18 +77,18 @@ const FooterPage = () => {
                   <div className=" flex flex-col sm:flex-row ">
                     <div className="  flex-1">
                       <h3
-                        class={`text-xl font-semibold leading-6 text-white flex items-center justify-center ${merri.className}`}
+                        className={`text-xl font-semibold leading-6 text-white flex items-center justify-center ${merri.className}`}
                       >
                         Quick Links
                       </h3>
                       <ul
                         role="list"
-                        class="mt-3 space-y-4 pl-[0px] flex flex-col items-center justify-center"
+                        className="mt-3 space-y-4 pl-[0px] flex flex-col items-center justify-center"
                       >
                         <li>
                           <a
                             href="#"
-                            class={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
+                            className={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
                           >
                             Home
                           </a>
@@ -96,7 +96,7 @@ const FooterPage = () => {
                         <li>
                           <a
                             href="#"
-                            class={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
+                            className={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
                           >
                             About us
                           </a>
@@ -104,7 +104,7 @@ const FooterPage = () => {
                         <li>
                           <a
                             href="#"
-                            class={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
+                            className={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
                           >
                             Donations
                           </a>
@@ -112,7 +112,7 @@ const FooterPage = () => {
                         <li>
                           <a
                             href="#"
-                            class={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
+                            className={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
                           >
                             Join ISKCON
                           </a>
@@ -120,7 +120,7 @@ const FooterPage = () => {
                         <li>
                           <a
                             href="#"
-                            class={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
+                            className={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
                           >
                             Terms Of Use
                           </a>
@@ -128,7 +128,7 @@ const FooterPage = () => {
                         <li>
                           <a
                             href="#"
-                            class={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
+                            className={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
                           >
                             Privacy Policy
                           </a>
@@ -136,7 +136,7 @@ const FooterPage = () => {
                         <li>
                           <a
                             href="#"
-                            class={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
+                            className={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
                           >
                             Cancellation Policy
                           </a>
@@ -145,18 +145,18 @@ const FooterPage = () => {
                     </div>
                     <div className="  flex-1">
                       <h3
-                        class={`text-xl font-semibold leading-6 text-white flex items-center justify-center ${merri.className}`}
+                        className={`text-xl font-semibold leading-6 text-white flex items-center justify-center ${merri.className}`}
                       >
                         Donate
                       </h3>
                       <ul
                         role="list"
-                        class="mt-3 space-y-4 pl-[0px] flex flex-col items-center justify-center"
+                        className="mt-3 space-y-4 pl-[0px] flex flex-col items-center justify-center"
                       >
                         <li>
                           <a
                             href="#"
-                            class={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
+                            className={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
                           >
                             Food for Needy
                           </a>
@@ -164,7 +164,7 @@ const FooterPage = () => {
                         <li>
                           <a
                             href="#"
-                            class={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
+                            className={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
                           >
                             Online Puja
                           </a>
@@ -172,7 +172,7 @@ const FooterPage = () => {
                         <li>
                           <a
                             href="#"
-                            class={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
+                            className={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
                           >
                             Sadhu Seva
                           </a>
@@ -180,7 +180,7 @@ const FooterPage = () => {
                         <li>
                           <a
                             href="#"
-                            class={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
+                            className={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
                           >
                             Genreal Donation
                           </a>
@@ -188,7 +188,7 @@ const FooterPage = () => {
                         <li>
                           <a
                             href="#"
-                            class={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
+                            className={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
                           >
                             Anna Daan
                           </a>

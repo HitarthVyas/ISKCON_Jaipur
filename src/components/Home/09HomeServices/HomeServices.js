@@ -1,6 +1,8 @@
 "use client";
 
 import { Architects_Daughter, Dancing_Script } from "next/font/google";
+import { homeServices } from "./homeServiceData";
+import Link from "next/link";
 
 const architects = Architects_Daughter({
   subsets: ["latin"],
@@ -18,28 +20,32 @@ const HomeServices = () => {
         <h1 className="text-6xl font-[400]">Our Services</h1>
       </div>
       <div>
-        <div className="grid grid-cols-1 md:grid-cols-3">
-          <div className="p-10 flex flex-col items-center">
-            <div
-              className="h-[150px] w-[175px] bg-[url('/Home/HomeExplore/homeSchedule.jpg')] bg-cover bg-center"
-              style={{ clipPath: "polygon(100% 0%, 0 20%, 0 100%, 100% 80%)" }}
-            ></div>
-            <h1 className={`${dancing.className} rotate-[-9deg]`}>House Program</h1>
-          </div>
-          <div className="p-10 flex flex-col items-center">
-            <div
-              className="h-[150px] w-[175px] bg-[url('/Home/commhall.jpg')] bg-cover bg-center"
-              style={{ clipPath: "polygon(0 0, 100% 20%, 100% 100%, 0 80%)" }}
-            ></div>
-            <h1 className={`${dancing.className} rotate-[9deg]`}>Community Hall</h1>
-          </div>
-          <div className="p-10 flex flex-col items-center">
-            <div
-              className="h-[150px] w-[175px] bg-[url('/Home/HomeExplore/homeSchedule.jpg')] bg-cover bg-center"
-              style={{ clipPath: "polygon(0 20%, 100% 0%, 100% 80%, 0 100%)" }}
-            ></div>
-            <h1 className={`${dancing.className} rotate-[-9deg]`}>Yatra</h1>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 max-w-screen-2xl m-auto">
+          {homeServices.map((service, i) => (
+            <Link
+              href={service.link}
+              key={i}
+              className="p-10 flex flex-col hover:scale-110 transition-all duration-300 items-center text-white hover:text-white no-underline hover:no-underline"
+            >
+              <img
+                src={service.image}
+                className="h-[150px] w-[175px] object-cover object-center"
+                style={{
+                  clipPath:
+                    i % 2
+                      ? "polygon(0 0, 100% 20%, 100% 100%, 0 80%)"
+                      : "polygon(100% 0%, 0 20%, 0 100%, 100% 80%)",
+                }}
+              />
+              <h1
+                className={`${dancing.className} rotate-[${
+                  i % 2 ? "9deg" : "-9deg"
+                }]`}
+              >
+                {service.title}
+              </h1>
+            </Link>
+          ))}
         </div>
       </div>
     </div>

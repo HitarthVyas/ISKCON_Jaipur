@@ -12,6 +12,7 @@ export const headerOptions = [
     options: [
       { subtitle: "Sadhu Seva", link: "sadhu-seva" },
       { subtitle: "Food For Life", link: "food-for-life" },
+      { subtitle: "Puja", link: "puja-seva" },
       { subtitle: "Gau Seva", link: "gau-seva" },
       { subtitle: "Nitya Seva", link: "nitya-seva" },
       { subtitle: "Explore More..", link: "donation" },
@@ -34,7 +35,7 @@ export const headerOptions = [
       { subtitle: "Govinda's", link: "govindas" },
       // { subtitle: "D' Cafe", link: "dcafe" },
       { subtitle: "Vrindavan Haat", link: "vrindavan-haat" },
-      { subtitle: "Gau Shala", link: "gau-shala" }
+      { subtitle: "Gau Shala", link: "gau-seva" }
     ]
   },
   {
@@ -42,7 +43,7 @@ export const headerOptions = [
     options: [
       { subtitle: "House Program", link: "house-program" },
       { subtitle: "Community Hall", link: "contact/#queries" },
-      { subtitle: "Puja", link: "puja" },
+      { subtitle: "Puja", link: "puja-seva" },
       { subtitle: "Yatra", link: "yatra" },
       { subtitle: "Life Member", link: "life-member" }
     ]

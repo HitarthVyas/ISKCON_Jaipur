@@ -15,7 +15,7 @@ const Objectives = () => {
       <h1
         className={`${play.className} text-center bg-[#d17a29] text-white pb-10 text-6xl`}
       >
-        Yatra Activities
+        Our Activities
       </h1>
       <div className="flex flex-wrap justify-evenly gap-10 m-auto max-w-screen-xl">
         {objectives.map((activity, i) => (

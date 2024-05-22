@@ -1,26 +1,32 @@
 export const campus = [
   {
+    link: '/contact#queries',
     title: 'Community Hall',
     campusImg: "/Home/commhall.jpg",
   },
   {
+    link: '/iskcon-jaipur',
     title: 'Bhaktivdanta Bhavan',
-    campusImg: "https://www.iskconjaipur.com/uploads/9/8/1/1/9811407/dsc-0444_orig.jpg",
+    campusImg: "/IJP/bhaktivedanta-bhavan.jpg",
   },
   {
+    link: '/guest-house',
     title: 'Guest House',
-    campusImg: "https://www.iskconjaipur.com/uploads/9/8/1/1/9811407/dsc-0444_orig.jpg",
+    campusImg: "/Explore/GuestHouse/insideGuestHouse.jpg",
   },
   {
+    link: '/govindas',
     title: "Govinda's",
     campusImg: "/Explore/Govindas/govindas.jpg",
   },
   {
+    link: '/vrindavan-haat',
     title: "Vrindavan Haat",
-    campusImg: "https://www.iskconjaipur.com/uploads/9/8/1/1/9811407/dsc-0444_orig.jpg",
+    campusImg: "/Explore/VrindavanHaat/vrindavan-haat.jpg",
   },
   {
+    link: '/gau-seva',
     title: 'Gau Shala',
-    campusImg: "https://www.iskconjaipur.com/uploads/9/8/1/1/9811407/dsc-0444_orig.jpg",
+    campusImg: "/Donation/GauSeva/pr.jpeg",
   }
 ]

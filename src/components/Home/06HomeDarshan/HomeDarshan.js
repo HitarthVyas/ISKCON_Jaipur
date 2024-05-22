@@ -22,9 +22,9 @@ const HomeDarshan = () => {
   };
 
   return (
-    <div className="relative h-[80vh] md:h-[90vh] flex items-center bg-white bg-cover">
+    <div className="relative flex items-center bg-white bg-cover">
       <div
-        className={`absolute z-[10] top-8 text-white text-6xl w-full text-center sm:text-7xl font-bold ${dancing.className}`}
+        className={`absolute z-[10] top-8 text-white text-6xl 2xl:text-7xl w-full text-center sm:text-7xl font-bold ${dancing.className}`}
         style={{
           textShadow:
             "-1px 1px 0 #000000, 2px -2px 0 #000000, 10px -10px 20px #ffd729, -15px 15px 20px #ffd729",
@@ -32,10 +32,7 @@ const HomeDarshan = () => {
       >
         <span className="">Vigraha Darshan</span>
       </div>
-      <div className="relative mx-auto w-full max-w-7xl flex items-center flex-col-reverse">
-        <button className="z-[100] mt-2 bg-gradient-to-r from-pink-500 to-yellow-500 transition-colors duration-1000 text-white w-28 py-2 rounded-full text-2xl font-medium sm:bottom-[-35px] bottom-[-60px]">
-          More{" "}
-        </button>
+      <div className="relative mx-auto w-full">
         <Carousel
           infiniteLoop
           showStatus={false}
@@ -56,6 +53,11 @@ const HomeDarshan = () => {
             </div>
           ))}
         </Carousel>
+        <div className="flex justify-center">
+          <button className="m-2 max-w-2xl bg-gradient-to-r from-pink-500 to-yellow-500 transition-colors duration-1000 text-white w-28 py-3 px-6 rounded-full text-2xl sm:text-3xl font-medium">
+            More{" "}
+          </button>
+        </div>
       </div>
     </div>
   );

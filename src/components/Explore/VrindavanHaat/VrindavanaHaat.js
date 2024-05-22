@@ -64,7 +64,7 @@ const VrindavanaHaat = () => {
         <span className={`${play.className} text-5xl font-semibold`}>
           CONTACT US:
         </span>{" "}
-        9876543210
+        9772203474
       </h2>
     </div>
   );
