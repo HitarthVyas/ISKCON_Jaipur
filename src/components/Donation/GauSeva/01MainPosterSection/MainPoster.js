@@ -76,7 +76,7 @@ const feed = [
   },
   {
     id: "5",
-    img: "Donation/GauSeva/Krishna-with-cow.jpg",
+    img: "Donation/GauSeva/Krishna-with-cow1.jpg",
     Title: "Feeds 7 cows for 7 days",
     Price: "₹ 5100",
   },
