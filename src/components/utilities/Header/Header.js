@@ -12,6 +12,12 @@ const Header = () => {
   const [showBackground, setShowBackground] = useState("bg-black");
   const router = useRouter(); // Use useRouter hook
   const pathname = usePathname();
+  const [openPanel, setOpenPanel] = useState(null);
+
+  // Function to toggle the open/close status of an accordion panel
+  const handleAccordionToggle = (eventKey) => {
+    setOpenPanel(openPanel === eventKey ? null : eventKey);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,12 +72,11 @@ const Header = () => {
           <div className="hidden lg:flex space-x-4">
             <ul className="flex m-0 flex-col lg:flex-row lg:items-center font-medium text-white">
               <li>
-                <Link href="/" className="active:no-underline hover:no-underline text-white focus:no-underline hover:text-white active:text-white">
-                  <div
-                    className={`block py-1 px-3 rounded`}
-                  >
-                    Home
-                  </div>
+                <Link
+                  href="/"
+                  className="active:no-underline hover:no-underline text-white focus:no-underline hover:text-white active:text-white"
+                >
+                  <div className={`block py-1 px-3 rounded`}>Home</div>
                 </Link>
               </li>
               {headerOptions.map((hopt, i) => (
@@ -82,12 +87,11 @@ const Header = () => {
                 </li>
               ))}
               <li>
-                <Link href="/contact" className="active:no-underline hover:no-underline text-white focus:no-underline hover:text-white active:text-white">
-                  <div
-                    className={`block py-1 px-3 rounded`}
-                  >
-                    Contact Us
-                  </div>
+                <Link
+                  href="/contact"
+                  className="active:no-underline hover:no-underline text-white focus:no-underline hover:text-white active:text-white"
+                >
+                  <div className={`block py-1 px-3 rounded`}>Contact Us</div>
                 </Link>
               </li>
             </ul>
@@ -163,14 +167,20 @@ const Header = () => {
                       <Link
                         href="/"
                         className={`hover:text-black text-black hover:no-underline no-underline ${
-                          router.pathname === "/" ? "text-orange-500" : ""
+                          ""
                         }`}
                       >
                         Home
                       </Link>
                     </div>
                     {headerOptions.map((hopt, i) => (
-                      <Accordion.Panel key={i} header={hopt.title} eventKey={1}>
+                      <Accordion.Panel
+                        key={i}
+                        header={hopt.title}
+                        eventKey={i} // Use a unique event key for each panel
+                        expanded={openPanel === i} // Set expanded prop based on controlled state
+                        onSelect={() => handleAccordionToggle(i)}
+                      >
                         {hopt.options.map((option, ind) => (
                           <div
                             key={ind}
@@ -194,7 +204,9 @@ const Header = () => {
                       <Link
                         href="/contact"
                         className={`hover:text-black text-black hover:no-underline no-underline ${
-                          router.pathname === "/contact" ? "text-orange-500" : ""
+                          router.pathname === "/contact"
+                            ? "text-orange-500"
+                            : ""
                         }`}
                       >
                         Contact Us

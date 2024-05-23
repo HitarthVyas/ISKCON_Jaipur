@@ -1,6 +1,6 @@
 export const campus = [
   {
-    link: '/contact#queries',
+    link: '/community-hall',
     title: 'Community Hall',
     campusImg: "/Home/commhall.jpg",
   },

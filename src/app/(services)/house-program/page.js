@@ -2,7 +2,7 @@
 
 import Intro from "@/components/Services/HouseProgram/01Intro/Intro";
 import Activities from "@/components/Services/HouseProgram/02Activities/Activities";
-import { Playfair } from "next/font/google";
+import { Dancing_Script, Playfair } from "next/font/google";
 import Link from "next/link";
 
 const play = Playfair({
@@ -10,13 +10,23 @@ const play = Playfair({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
+const dancing = Dancing_Script({
+  subsets: ["latin"],
+});
+
 const page = () => {
   return (
     <div>
       <div
         className="relative h-screen w-full bg-cover bg-top"
-        style={{ backgroundImage: "url('/IJP/ijpBanner.jpg')" }}
+        style={{ backgroundImage: "url('/Services/HouseProgram/house-program.png')" }}
       >
+        <h1
+          className={`${dancing.className} absolute p-4 w-full text-center text-white text-5xl sm:text-7xl top-1/2`}
+          style={{ textShadow: "0px 0px 5px black" }}
+        >
+          House Program
+        </h1>
         <Link
           href="#contact"
           className="absolute w-full flex justify-center top-[80vh] no-underline hover:no-underline active:no-underline"

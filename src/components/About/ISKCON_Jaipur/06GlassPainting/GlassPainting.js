@@ -1,4 +1,5 @@
 import { Dancing_Script } from "next/font/google";
+import Carousel from "./Carousel";
 
 const dancing = Dancing_Script({
   subsets: ["latin"],
@@ -8,13 +9,13 @@ const GlassPainting = () => {
   return (
     <>
       <div
-        className="relative text-center bg-cover bg-center-top bg-fixed z-1 h-[115vh] lg:h-screen"
+        className="relative text-center bg-cover bg-center-top bg-fixed z-1"
         style={{
           backgroundImage:
             "url('/IJP/glassbg.jpg')",
         }}
       >
-        <div className="absolute inset-0 flex flex-col justify-center items-center bg-gradient-to-r from-[#d17a29]/40 to-red-400/30 text-white">
+        <div className=" py-10 inset-0 flex flex-col justify-center items-center bg-gradient-to-r from-[#d17a29]/40 to-red-400/30 text-white">
           <div className="w-full sm:w-11/12 bg-black/60">
             <h1
               className={`${dancing.className} pb-4 xl:text-7xl sm:text-5xl text-[2.5rem] pt-2`}
@@ -65,6 +66,8 @@ const GlassPainting = () => {
                 </p>
               </div>
             </div>
+
+            <Carousel />
           </div>
         </div>
       </div>

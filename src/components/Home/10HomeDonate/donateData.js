@@ -11,7 +11,7 @@ export const donate = [
   },
   {
     title: "Nitya Seva",
-    image: "/Donation/NityaSeva/nitya-seva-mainpage.jpg",
+    image: "/Donation/NityaSeva/NITYA_SEWA.jpg",
     link: "nitya-seva",
   },
 ]

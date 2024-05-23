@@ -2,7 +2,7 @@ export const homeServices = [
   {
     link: "/house-program",
     title: "House Program",
-    image: "/Home/HomeExplore/homeSchedule.jpg",
+    image: "/Services/HouseProgram/house-program.png",
   },
   {
     link: "/contact#queries",

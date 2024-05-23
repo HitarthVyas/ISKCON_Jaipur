@@ -2,7 +2,7 @@ export const homeActivities = [
   {
     link: "iyf",
     title: "Youth Sessions",
-    image: "/Home/HomeExplore/homeSchedule.jpg"
+    image: "/Connect/IYF/iyf.jpg"
   },
   {
     link: "kids-teenager",
@@ -12,6 +12,6 @@ export const homeActivities = [
   {
     link: "bhakti-vriksha",
     title: "Bhakti Vriksha",
-    image: "/Connect/BhaktiVriksha/bhakti-vriksha.jpg"
+    image: "/Connect/BhaktiVriksha/bhakti-vriksha.png"
   }
 ]
