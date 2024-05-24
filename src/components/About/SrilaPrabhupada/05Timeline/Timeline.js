@@ -75,7 +75,10 @@ const TimelineItem = ({ journey, index }) => {
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
           transition={{ duration: 1 }}
         >
-          <time className="font-mono italic text-[#e5b776] text-xl font-bold">
+          <time
+            className="font-mono italic text-[#e5b776] text-xl font-bold"
+            style={{ textShadow: "0px 0px 2px black, 0px 0px 2px black" }}
+          >
             {journey.year}
           </time>
           <p className="font-medium">{journey.description}</p>

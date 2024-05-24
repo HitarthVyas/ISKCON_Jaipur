@@ -1,4 +1,4 @@
-"use client";
+import { motion } from "framer-motion";
 import { Playfair_Display } from "next/font/google";
 import { useState } from "react";
 import { qualities } from "./qualities";
@@ -12,12 +12,11 @@ const MyComponent = ({ point }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div
+    <motion.div
       className="h-full w-full bg-black/50 flex justify-center p-2 flex-col"
-      style={{
-        opacity: isHovered ? 1 : 0,
-        transition: "opacity 0.2s ease-in-out",
-      }}
+      initial={{ opacity: 0 }} // Initial hidden state
+      animate={{ opacity: isHovered ? 1 : 0 }} // Visible state with animation
+      transition={{ duration: 0.5 }} // Transition duration
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -29,7 +28,7 @@ const MyComponent = ({ point }) => {
       >
         {point}
       </p>
-    </div>
+    </motion.div>
   );
 };
 
@@ -41,7 +40,13 @@ const Objectives = () => {
       </h1>
       <div className="flex gap-x-2 gap-y-4 flex-row flex-wrap justify-center">
         {qualities.map((quality, index) => (
-          <div className="bg-white" key={index}>
+          <motion.div
+            className="bg-white"
+            key={index}
+            initial={{ opacity: 0, y: 50 }} // Initial hidden state
+            animate={{ opacity: 1, y: 0 }} // Visible state with animation
+            transition={{ duration: 0.5, delay: index * 0.2 }} // Transition duration with a consistent delay
+          >
             <h5 className={`${play.className}`}>{quality.title}</h5>
             <div
               className="w-[180px] h-[180px] text-white bg-contain"
@@ -49,7 +54,7 @@ const Objectives = () => {
             >
               <MyComponent point={quality.point} />
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

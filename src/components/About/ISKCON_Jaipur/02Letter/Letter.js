@@ -1,18 +1,28 @@
 "use client";
-
+import { motion } from "framer-motion";
 import { Playfair } from "next/font/google";
+import { useInView } from "react-intersection-observer";
 
 const play = Playfair({
   subsets: ["latin"],
 });
 
 const Letter = () => {
+  const [imageRef, inView] = useInView({
+    triggerOnce: true, // Only trigger once
+    threshold: 0.3, // Trigger when 50% of the image is in view
+  });
+
   return (
     <div className="py-14 p-4 sm:px-10 bg-[#d17a2920] flex justify-center">
       <div className="flex flex-col-reverse lg:flex-row items-center max-w-screen-2xl">
-        <img
+        <motion.img
+          ref={imageRef} // Reference to the image element
           src="https://vanimedia.org/w/images/2/2c/750713_-_Letter_to_Mahavir_Prasad_Jaipuria.JPG"
           className="w-full sm:w-4/5 lg:max-h-[550px] xl:max-h-[650px] 2xl:max-h-[750px] block"
+          initial={{ x: -100, opacity: 0 }} // Initial position (off-screen) and opacity
+          animate={inView ? { x: 0, opacity: 1 } : {}} // Animation when in view
+          transition={{ duration: 1, ease: "easeInOut" }} // Animation duration and easing
         />
         <div className="relative w-full flex flex-col justify-center items-center">
           <h1

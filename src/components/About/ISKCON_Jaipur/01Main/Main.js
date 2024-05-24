@@ -21,8 +21,8 @@ const ptserif = Courgette({
 const IJPHero = () => {
   return (
     <div
-      className="relative h-[95vh] mt-[65px] w-full"
-      style={{ background: "url('/IJP/temple-day.jpg') top/cover" }}
+      className="relative h-[95vh] mt-[65px] w-full bg-cover bg-fixed"
+      style={{ backgroundImage: "url('/IJP/temple-day.jpg')" }}
     >
       <div className="absolute h-[95vh] inset-0 bg-black/60"></div>
       <motion.div

@@ -3,22 +3,7 @@ import { useState } from "react";
 import { Calendar, Badge } from "rsuite";
 import { LuClock4 } from "react-icons/lu";
 import "./HomeCalendar.css";
-
-const eventList = {
-  "2024-05-10": [
-    { time: "10:30 am", title: "Meeting" },
-    { time: "12:00 pm", title: "Lunch" },
-  ],
-  "2024-05-14": [
-    { time: "09:30 pm", title: "Products Introduction Meeting" },
-    { time: "12:30 pm", title: "Client entertaining" },
-    { time: "02:00 pm", title: "Product design discussion" },
-    { time: "05:00 pm", title: "Product test and acceptance" },
-    { time: "06:30 pm", title: "Reporting" },
-    { time: "10:00 pm", title: "Going home to walk the dog" },
-  ],
-  // Add more dates and events here
-};
+import { eventList } from "./events";
 
 const HomeCalendar = () => {
   const [selectedDateEvents, setSelectedDateEvents] = useState([]);
