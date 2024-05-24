@@ -26,7 +26,7 @@ const Activities = () => {
       <div className="flex flex-wrap justify-evenly gap-10">
         {activities.map((pt, i) => (
           <div
-            className="relative w-72 pt-10"
+            className="relative w-72 pt-10 hover:scale-110 transition-all duration-500"
             key={i}
           >
             <div

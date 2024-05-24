@@ -2,6 +2,7 @@
 
 import BvIntro from "@/components/Connect/BhaktiVriksha/01Intro/BvIntro"
 import Objectives from "@/components/Connect/BhaktiVriksha/02Objectives/Objectives"
+import Contact from "@/components/Connect/BhaktiVriksha/03Contact/Contact"
 import Link from "next/link"
 
 const page = () => {
@@ -10,7 +11,7 @@ const page = () => {
       <div>
         <div
           className="relative h-screen w-full bg-cover bg-top"
-          style={{ backgroundImage: "url('/Connect/BhaktiVriksha/bhakti-vriksha.jpg')" }}
+          style={{ backgroundImage: "url('/Connect/BhaktiVriksha/bhakti-vriksha.png')" }}
         >
           <Link
             href="#contact"
@@ -24,7 +25,7 @@ const page = () => {
       </div>
       <BvIntro />
       <Objectives />
-      
+      <Contact />
     </div>
   )
 }

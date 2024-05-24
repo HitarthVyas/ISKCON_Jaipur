@@ -20,6 +20,12 @@ const VrindavanaHaat = () => {
         className="relative h-screen w-full bg-cover bg-top"
         style={{ backgroundImage: "url('/Explore/VrindavanHaat/haat-banner.jpg')" }}
       >
+        <h1
+          className={`${dancing.className} absolute p-4 w-full text-center text-white text-5xl sm:text-7xl top-1/2`}
+          style={{ textShadow: "0px 0px 5px black" }}
+        >
+          Vrindavan Haat
+        </h1>
         <Link
           href="#contact"
           className="absolute w-full hover:scale-110 transition-all duration-300 flex justify-center top-[80vh] no-underline hover:no-underline active:no-underline"
@@ -38,7 +44,7 @@ const VrindavanaHaat = () => {
         </h1>
         <div className="flex gap-10 flex-wrap justify-center">
           {haatData.map((haat, i) => (
-            <div key={i} className="bg-white w-72 sm:w-80 p-2 flex items-center flex-col">
+            <div key={i} className="bg-white w-72 sm:w-80 p-2 flex items-center flex-col hover:scale-105 transition-all duration-500">
               <div className="relative w-72 h-72 sm:w-80 sm:h-80">
                 <Image
                   src={`/Explore/VrindavanHaat/${haat.image}`}
@@ -49,7 +55,7 @@ const VrindavanaHaat = () => {
                 />
               </div>
               <button
-                className={`font-medium px-3 py-1 bg-[#d17a29] rounded-full text-white m-1`}
+                className={`font-medium px-3 py-1 bg-[#d17a29] rounded-full text-white m-1 hover:scale-110 transition-all duration-500`}
               >
                 {haat.title}
               </button>

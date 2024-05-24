@@ -42,7 +42,7 @@ export const headerOptions = [
     title: "Services",
     options: [
       { subtitle: "House Program", link: "house-program" },
-      { subtitle: "Community Hall", link: "contact/#queries" },
+      { subtitle: "Community Hall", link: "community-hall" },
       { subtitle: "Puja", link: "puja-seva" },
       { subtitle: "Yatra", link: "yatra" },
       { subtitle: "Life Member", link: "life-member" }

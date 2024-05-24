@@ -29,7 +29,7 @@ const HomeServices = () => {
             >
               <img
                 src={service.image}
-                className="h-[150px] w-[175px] object-cover object-center"
+                className="h-[150px] w-[175px] object-cover object-top"
                 style={{
                   clipPath:
                     i % 2

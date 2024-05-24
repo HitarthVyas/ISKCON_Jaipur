@@ -19,6 +19,10 @@ const Contact = () => {
               <span>Avinashi Govind Pr: </span>
               <span>+91 9351281019</span>
             </p>
+            <p className="text-base font-bold mb-0">
+              <span>Devesha Baladeva Pr: </span>
+              <span>+91 9024308124</span>
+            </p>
           </div>
           <div className="mt-7">
             <h5 className="pb-2">Online Classes:</h5>
