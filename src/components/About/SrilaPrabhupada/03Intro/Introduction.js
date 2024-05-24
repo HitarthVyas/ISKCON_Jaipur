@@ -93,7 +93,7 @@ const Introduction = () => {
               >
                 Born on September 01, 1896, in Calcutta, he was named Abhay
                 Charan, meaning one who is{" "}
-                <b>fearless by taking shelter at Lord Krishna's Lotus Feet</b>.
+                <b>fearless by taking shelter at Lord Krishna&apos;s Lotus Feet</b>.
               </motion.p>
               <motion.p
                 ref={para4Ref}
