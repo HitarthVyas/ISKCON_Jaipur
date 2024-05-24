@@ -35,9 +35,6 @@ export default function GuestHouseMain() {
               textShadow:
                 "2px 2px black, 4px 4px 10px #d17a29, -4px -4px 10px #d17a29",
             }}
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
           >
             Welcome To GuestHouse
           </motion.h1>
