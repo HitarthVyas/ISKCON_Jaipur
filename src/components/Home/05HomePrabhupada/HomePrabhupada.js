@@ -46,7 +46,7 @@ const HomePrabhupada = () => {
             className="px-5 rounded-full h-20 bg-[#ff7a29]"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : 100 }}
-            transition={{ delay: 1.5 }}
+            transition={{ delay: 1 }}
           >
             <img src="/Home/HomePrabhupada/right.svg" className="w-10" />
           </motion.button>

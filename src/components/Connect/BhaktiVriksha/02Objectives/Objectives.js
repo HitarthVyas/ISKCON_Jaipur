@@ -11,7 +11,7 @@ const play = Playfair({
 
 const Objectives = () => {
   return (
-    <div className="p-14 bg-[#d17a29]">
+    <div className="p-14 px-0 sm:px-5 bg-[#d17a29]">
       <h1
         className={`${play.className} text-center bg-[#d17a29] text-white pb-10 text-6xl`}
       >
@@ -21,7 +21,7 @@ const Objectives = () => {
         {objectives.map((activity, i) => (
           <div
             key={i}
-            className="min-w-72 max-w-72 hover:scale-105 transition-all duration-500 bg-white rounded-lg shadow-lg"
+            className="sm:min-w-72 sm:max-w-72 min-w-64 max-w-64 hover:scale-105 transition-all duration-500 bg-white rounded-lg shadow-lg"
           >
             <img
               className="rounded-t-lg object-cover h-64 w-full object-top"

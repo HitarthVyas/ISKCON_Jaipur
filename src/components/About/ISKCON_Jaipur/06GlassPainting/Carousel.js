@@ -59,6 +59,8 @@ const settings = {
   initialSlide: 0,
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />,
+  autoplay: true, // Enable autoplay
+  autoplaySpeed: 5000, // Set autoplay speed to 3000 milliseconds (3 seconds)
   responsive: [
     {
       breakpoint: 1024,

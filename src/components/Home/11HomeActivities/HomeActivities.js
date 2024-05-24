@@ -3,6 +3,9 @@
 import { Dancing_Script, Playfair_Display } from "next/font/google";
 import { homeActivities } from "./homeActivitiesData";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 const dancing = Dancing_Script({
   subsets: ["latin"],
@@ -14,6 +17,18 @@ const playfair = Playfair_Display({
 });
 
 const HomeActivities = () => {
+  const [animationState, setAnimationState] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.4,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setAnimationState(true);
+    }
+  }, [inView]);
+
   return (
     <div className="bg-[#fac592] text-white">
       <div className={`pt-16 text-center text-gray-700 ${playfair.className}`}>
@@ -22,25 +37,29 @@ const HomeActivities = () => {
       <div>
         <div className="grid grid-cols-1 lg:grid-cols-3 text-center max-w-screen-2xl m-auto">
           {homeActivities.map((activity, i) => (
-            <Link
-              key={i}
-              href={activity.link}
-              className="p-10 flex flex-col items-center text-white no-underline hover:text-white hover:no-underline"
-            >
-              <div
-                className="h-[350px] relative w-full bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${activity.image})`,
-                  textShadow:
-                    "0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black",
-                }}
+            <Link key={i} href={activity.link}>
+              <motion.div
+                className="p-10 flex flex-col items-center text-white no-underline hover:text-white hover:no-underline"
+                ref={ref}
+                initial={{ opacity: 0, scale: 0.5 }} // Change initial scale to 50%
+                animate={animationState ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.5 }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
               >
-                <h1
-                  className={`absolute bottom-2 w-full ${playfair.className} pt-4 font-medium px-4`}
+                <div
+                  className="h-[350px] relative w-full bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url(${activity.image})`,
+                    textShadow:
+                      "0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black",
+                  }}
                 >
-                  {activity.title}
-                </h1>
-              </div>
+                  <h1 className={`absolute bottom-2 w-full ${playfair.className} pt-4 font-medium px-4`}>
+                    {activity.title}
+                  </h1>
+                </div>
+              </motion.div>
             </Link>
           ))}
         </div>
