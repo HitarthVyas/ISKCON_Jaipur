@@ -10,11 +10,9 @@ export const headerOptions = [
   {
     title: "Donate",
     options: [
-      { subtitle: "Sadhu Seva", link: "sadhu-seva" },
-      { subtitle: "Food For Life", link: "food-for-life" },
-      { subtitle: "Puja", link: "puja-seva" },
-      { subtitle: "Gau Seva", link: "gau-seva" },
       { subtitle: "Nitya Seva", link: "nitya-seva" },
+      { subtitle: "Food For Life", link: "food-for-life" },
+      { subtitle: "Gau Seva", link: "gau-seva" },
       { subtitle: "Explore More..", link: "donation" },
     ]
   },
