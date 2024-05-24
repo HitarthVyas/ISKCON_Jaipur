@@ -148,7 +148,7 @@ export default function TestimonialSection() {
               <div className="md:h-[250px] sm:h-[250px] h-[330px]">
                 <p className="text-[#6C6D72] text-[16px] text-justify p-[15px]">
                   It was a really great atmosphere for the family and the room
-                  was clean and a good place it&apos;s great and amazing experience
+                  was clean and a good place it's great and amazing experience
                   Really great opportunity to stay with Krishna temple geust
                   house.
                 </p>
@@ -263,6 +263,15 @@ export default function TestimonialSection() {
             </div>
           </div>
         </Slider>
+
+        <div  id="contactSection">
+          <h1
+            className="text-[#98532d] text-center text-5xl max-sm:text-2xl max-[330px]:text-xl pt-28 max-sm:pt-14 px-5"
+          >
+            Contact Us: 8905661443
+          </h1>
+        </div> 
+        
       </div>
       {/* <facilities section end> */}
     </>
