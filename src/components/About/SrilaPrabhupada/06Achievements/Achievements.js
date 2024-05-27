@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Kanit, Playfair_Display } from "next/font/google";
@@ -15,11 +15,6 @@ const play = Playfair_Display({
 });
 
 const Achievements = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.5, // Adjust the threshold as needed
-  });
-
   return (
     <div
       className="py-16 text-gray-700 relative"
@@ -29,29 +24,29 @@ const Achievements = () => {
       }}
     >
       <h1 className={`${play.className} text-center pb-10`}>
-        Srila<span className="text-[#d17a29]"> Prabhupada&apos;s</span> Priceless
-        Gift to the World
+        Srila<span className="text-[#d17a29]"> Prabhupada&apos;s</span>{" "}
+        Priceless Gift to the World
       </h1>
       <div
-        ref={ref}
         className={`${kanit.className} grid grid-cols-2 gap-y-5 md:grid-cols-4 place-items-center`}
       >
         {achieveData.map((achieve, index) => (
-          <AchievementCard
-            key={index}
-            index={index}
-            inView={inView}
-            achieve={achieve}
-          />
+          <AchievementCard key={index} index={index} achieve={achieve} />
         ))}
       </div>
     </div>
   );
 };
 
-const AchievementCard = ({ index, inView, achieve }) => {
+const AchievementCard = ({ index, achieve }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2, // Adjust the threshold as needed
+  });
+
   return (
     <motion.div
+      ref={ref}
       initial={{ y: 20, opacity: 0 }}
       animate={inView ? { y: 0, opacity: 1 } : {}}
       transition={{ duration: 0.5, delay: inView ? 0.1 * (index + 1) : 0 }}

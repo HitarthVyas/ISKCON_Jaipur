@@ -20,8 +20,8 @@ const HomeSchedule = () => {
         <div>
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : -100 }}
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -100 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
           <p className="text-[18px] lg:text-[22px] text-[#3e4991] text-left font-semibold mb-[10px]">
@@ -34,8 +34,8 @@ const HomeSchedule = () => {
             <motion.div
               key={i}
               ref={ref}
-              initial={{ opacity: 0, x: -100 }}
-              animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : -100 }}
+              initial={{ opacity: 0, y: -100 }}
+              animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : -100 }}
               transition={{ delay: 0.4, duration: 0.6 }}
               className={`${comfortaa.className}`}
             >
@@ -50,8 +50,8 @@ const HomeSchedule = () => {
       </div>
       <motion.div
         ref={ref}
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : 100 }}
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 100 }}
         transition={{ delay: 0.2, duration: 0.6 }}
       >
         <img src="/Home/HomeSchedule/homeSchedule.jpg" className="h-[70vh] hidden md:block" />

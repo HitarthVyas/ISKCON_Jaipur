@@ -32,10 +32,10 @@ const HomeCalendar = () => {
   }
 
   return (
-    <div className="w-full p-5 min-h-screen flex font-medium flex-col items-center justify-center">
+    <div className="w-full p-2 min-h-screen flex font-medium flex-col items-center justify-center">
       <span className="md:hidden text-4xl text-[#ff7a29]">Events Calendar</span>
       <Calendar bordered renderCell={renderCell} />
-      <div className="w-[97%] max-h-40 overflow-auto p-2 border-[1px] border-gray-300">
+      <div className="w-[97%] max-h-40 overflow-auto border-[1px] border-gray-300">
         {selectedDateEvents.map((event, index) => (
           <p key={index}>
             <span className="flex gap-2 items-center">

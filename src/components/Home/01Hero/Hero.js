@@ -29,7 +29,7 @@ const Hero = () => {
               WELCOME TO
             </motion.span>
             <motion.h1
-              className={`lg:text-[84px] text-[52px] ${dancing.className}`}
+              className={`lg:text-[84px] text-[52px] px-5 ${dancing.className}`}
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}

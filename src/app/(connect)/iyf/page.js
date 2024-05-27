@@ -19,10 +19,10 @@ const page = () => {
         style={{ backgroundImage: "url('/Connect/IYF/iyf.jpg')" }}
       >
         <h1
-          className={`${dancing.className} absolute p-4 w-full text-center text-white text-5xl sm:text-7xl top-1/2`}
+          className={`${dancing.className} absolute p-0 w-full text-center text-white text-5xl sm:text-7xl top-1/2`}
           style={{ textShadow: "0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black" }}
         >
-          Youth Forum
+          <span className="p-4 px-8 bg-black/40 rounded-lg">Youth Forum</span>
         </h1>
         <Link href="#contact" className="absolute w-full flex justify-center top-[80vh] no-underline hover:no-underline active:no-underline">
           <button className="py-3 px-6 rounded-full text-xl bg-[#d17a29] text-white font-semibold top-[80vh]">

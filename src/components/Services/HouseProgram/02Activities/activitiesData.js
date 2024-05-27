@@ -23,7 +23,7 @@ export const activities = [
   {
     title: "Meditation",
     image:
-    "/IJP/ijpBanner.jpg",
+    "/Services/HouseProgram/meditation-house.jpg",
     details:
       "Meditate on the Hare Krishna Maha Mantra, channeling spiritual energy and finding inner peace through devotion and meditation practice.",
   },

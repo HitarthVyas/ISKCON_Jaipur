@@ -2,7 +2,8 @@
 
 import { Playfair } from "next/font/google";
 import { objectives } from "./objData";
-import Image from "next/image";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 const play = Playfair({
   subsets: ["latin"],
@@ -19,27 +20,36 @@ const Objectives = () => {
       </h1>
       <div className="flex flex-wrap justify-evenly gap-10 m-auto max-w-screen-xl">
         {objectives.map((activity, i) => (
-          <div
-            key={i}
-            className="sm:min-w-72 sm:max-w-72 min-w-64 max-w-64 hover:scale-105 transition-all duration-500 bg-white rounded-lg shadow-lg"
-          >
-            <img
-              className="rounded-t-lg object-cover h-64 w-full object-top"
-              src={`/Connect/BhaktiVriksha/objectives/${activity.image}`}
-              alt="Noteworthy technology acquisitions 2021"
-            />
-            <div className="p-5">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight">
-                {activity.title}
-              </h5>
-              <p className="mb-3 font-normal text-justify">
-                {activity.description}
-              </p>
-            </div>
-          </div>
+          <ObjCard key={i} activity={activity} i={i} />
         ))}
       </div>
     </div>
+  );
+};
+
+const ObjCard = ({ activity, i }) => {
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ y: 20, opacity: 0 }}
+      animate={ { y: inView ? 0 : 20, opacity: inView ? 1 : 0 } }
+      transition={{ duration: 1, delay: inView ? 0.1 * (i + 1) : 0 }}
+      className="sm:min-w-72 sm:max-w-72 min-w-64 max-w-64 hover:scale-105 transition-all duration-500 bg-white rounded-lg shadow-lg"
+    >
+      <img
+        className="rounded-t-lg object-cover h-64 w-full object-top"
+        src={`/Connect/BhaktiVriksha/objectives/${activity.image}`}
+        alt="Noteworthy technology acquisitions 2021"
+      />
+      <div className="p-5">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight">
+          {activity.title}
+        </h5>
+        <p className="mb-3 font-normal text-justify">{activity.description}</p>
+      </div>
+    </motion.div>
   );
 };
 

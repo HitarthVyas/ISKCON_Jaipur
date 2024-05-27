@@ -39,7 +39,7 @@ const AchievementCard = ({ index, exp }) => {
       initial={{ y: 20, opacity: 0 }}
       animate={inView ? { y: 0, opacity: 1 } : {}}
       transition={{ duration: 0.5, delay: inView ? 0.1 * (index + 1) : 0 }}
-      className="hover:bg-[#d17a29] rounded-lg max-w-80 transition-all duration-300 p-2 "
+      className="hover:bg-[#d17a29] rounded-lg max-w-80 transition-all duration-300 p-2"
     >
       <Link href={exp.link} className="no-underline text-gray-800 hover:no-underline hover:text-white">
         <img

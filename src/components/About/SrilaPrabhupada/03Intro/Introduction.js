@@ -36,8 +36,8 @@ const Introduction = () => {
 
   // Animation variants
   const variants = {
-    hidden: { opacity: 0, x: 50 },
-    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: -0 },
   };
 
   return (
@@ -61,8 +61,8 @@ const Introduction = () => {
             <div className={`text-gray-700 text-justify text-sm md:text-lg`}>
               <motion.p
                 ref={para1Ref}
-                initial={{ opacity: 0, x: 50 }}
-                animate={para1InView ? { opacity: 1, x: 0 } : {}}
+                initial={{ opacity: 0, y: -50 }}
+                animate={para1InView ? { opacity: 1, y: -0 } : {}}
                 transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
                 variants={variants}
               >
@@ -73,9 +73,9 @@ const Introduction = () => {
               </motion.p>
               <motion.p
                 ref={para2Ref}
-                initial={{ opacity: 0, x: 50 }}
-                animate={para2InView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.6, ease: "easeInOut" }}
+                initial={{ opacity: 0, y: -50 }}
+                animate={para2InView ? { opacity: 1, y: -0 } : {}}
+                transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
                 variants={variants}
               >
                 Over five hundred years ago, Lord Sri Krishna appeared as Sri
@@ -86,9 +86,9 @@ const Introduction = () => {
               </motion.p>
               <motion.p
                 ref={para3Ref}
-                initial={{ opacity: 0, x: 50 }}
-                animate={para3InView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.7, ease: "easeInOut" }}
+                initial={{ opacity: 0, y: -50 }}
+                animate={para3InView ? { opacity: 1, y: -0 } : {}}
+                transition={{ duration: 0.5, delay: 0.6, ease: "easeInOut" }}
                 variants={variants}
               >
                 Born on September 01, 1896, in Calcutta, he was named Abhay
@@ -97,9 +97,9 @@ const Introduction = () => {
               </motion.p>
               <motion.p
                 ref={para4Ref}
-                initial={{ opacity: 0, x: 50 }}
-                animate={para4InView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.8, ease: "easeInOut" }}
+                initial={{ opacity: 0, y: -50 }}
+                animate={para4InView ? { opacity: 1, y: -0 } : {}}
+                transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
                 variants={variants}
                 className="mb-0"
               >

@@ -1,26 +1,45 @@
 "use client"
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { services } from "./serviceData";
 import { Dancing_Script } from "next/font/google";
 
 const dancing = Dancing_Script({
   subsets: ["latin"],
-})
+});
 
 const Service = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+
+  useEffect(() => {
+    // Detect if the device is touch-enabled
+    setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
+  }, []);
 
   const handleHoverStart = (index) => {
-    setHoveredIndex(index);
+    if (!isTouchDevice) {
+      setHoveredIndex(index);
+    }
   };
 
   const handleHoverEnd = () => {
-    setHoveredIndex(null);
+    if (!isTouchDevice) {
+      setHoveredIndex(null);
+    }
   };
+
+  const handleCardClick = (index) => {
+    if (isTouchDevice) {
+      setHoveredIndex(hoveredIndex === index ? null : index);
+    }
+  };
+
   return (
     <div className='p-2 sm:px-10 py-10'>
-      <h1 className={`text-center text-5xl font-medium text-orange-950 pb-4 ${dancing.className}`}>Our Counselling Domains</h1>
+      <h1 className={`text-center text-5xl font-medium text-orange-950 pb-4 ${dancing.className}`}>
+        Our Counselling Domains
+      </h1>
       <div className="flex flex-wrap justify-evenly gap-10">
         {services.map((service, i) => (
           <motion.div
@@ -28,6 +47,7 @@ const Service = () => {
             className="relative w-72 pt-10"
             onHoverStart={() => handleHoverStart(i)}
             onHoverEnd={handleHoverEnd}
+            onClick={() => handleCardClick(i)}
           >
             <motion.div
               transition={{ duration: 0.7 }}
@@ -37,7 +57,7 @@ const Service = () => {
             >
               <div>
                 <h4 className="text-center py-2 font-medium h-[84px]">{service.domain}</h4>
-                <img src={'/Connect/IYF/councelling/'+service.image} className="object-cover w-full bg-white h-64" />
+                <img src={'/Connect/IYF/councelling/' + service.image} className="object-cover w-full bg-white h-64" />
               </div>
             </motion.div>
             <motion.div
@@ -51,9 +71,7 @@ const Service = () => {
                 style={{ rotateY: hoveredIndex === i ? 180 : 0, transformStyle: "preserve-3d" }}
               >
                 {service.subtopics.map((s, j) => (
-                  <li key={j}>
-                    {s}
-                  </li>
+                  <li key={j}>{s}</li>
                 ))}
               </motion.ul>
             </motion.div>
@@ -61,7 +79,7 @@ const Service = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Service
+export default Service;

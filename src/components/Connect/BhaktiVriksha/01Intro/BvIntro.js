@@ -10,7 +10,7 @@ const play = Playfair({
 
 const BvIntro = () => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.4 });
+  const [ref, inView] = useInView({ threshold: 0.2 });
   const [animationStarted, setAnimationStarted] = useState(false);
 
   if (inView && !animationStarted) {

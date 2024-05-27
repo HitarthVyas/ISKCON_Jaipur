@@ -1,4 +1,3 @@
-"use client";
 import { motion } from "framer-motion";
 import { Playfair } from "next/font/google";
 import { useInView } from "react-intersection-observer";
@@ -9,37 +8,33 @@ const play = Playfair({
 
 const Letter = () => {
   const [imageRef, inView] = useInView({
-    triggerOnce: true, // Only trigger once
-    threshold: 0.3, // Trigger when 50% of the image is in view
+    triggerOnce: true,
+    threshold: 0.3,
   });
 
   return (
     <div className="py-14 p-4 sm:px-10 bg-[#d17a2920] flex justify-center">
       <div className="flex flex-col-reverse lg:flex-row items-center max-w-screen-2xl">
         <motion.img
-          ref={imageRef} // Reference to the image element
+          ref={imageRef}
           src="https://vanimedia.org/w/images/2/2c/750713_-_Letter_to_Mahavir_Prasad_Jaipuria.JPG"
           className="w-full sm:w-4/5 lg:max-h-[550px] xl:max-h-[650px] 2xl:max-h-[750px] block"
-          initial={{ x: -100, opacity: 0 }} // Initial position (off-screen) and opacity
-          animate={inView ? { x: 0, opacity: 1 } : {}} // Animation when in view
-          transition={{ duration: 1, ease: "easeInOut" }} // Animation duration and easing
+          initial={{ x: -100, opacity: 0 }}
+          animate={inView ? { x: 0, opacity: 1 } : {}}
+          transition={{ duration: 1, ease: "easeInOut" }}
         />
-        <div className="relative w-full flex flex-col justify-center items-center">
+        <motion.div
+          className="relative w-full flex flex-col justify-center items-center"
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
           <h1
             className={`${play.className} pb-6 px-4 text-center text-4xl xl:text-5xl text-bold`}
           >
             A Temple of Dedication...
           </h1>
           <div className="md:w-4/5 p-2 md:p-0 w-full text-justify text-sm sm:text-md xl:text-lg 2xl:text-xl">
-            {/* <p>
-            In September 1965, His Divine Grace A.C. Bhaktivedanta Swami
-            Prabhupada embarked on a journey from India, driven by the prophesy
-            made five hundred years ago by <b>Lord Chaitanya Mahaprabhu</b> that
-            his name would be chanted in every town and village of the world.
-            Amidst the spiritual desert of Kali-Yuga, the centers of Krishna
-            Consciousness serve as oases of shelter, one such being the Shri
-            Shri Krishna Balaram Mandir.
-          </p> */}
             <p>
               Srila Prabhupada envisioned spreading the worship of Sri Sri Radha
               Govindaji to the whole world, expressing his desire to establish a
@@ -64,7 +59,7 @@ const Letter = () => {
               spiritual enlightenment for all.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
