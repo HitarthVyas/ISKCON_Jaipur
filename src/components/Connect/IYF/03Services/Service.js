@@ -30,9 +30,7 @@ const Service = () => {
   };
 
   const handleCardClick = (index) => {
-    if (isTouchDevice) {
-      setHoveredIndex(hoveredIndex === index ? null : index);
-    }
+    setHoveredIndex(hoveredIndex === index ? null : index);
   };
 
   return (

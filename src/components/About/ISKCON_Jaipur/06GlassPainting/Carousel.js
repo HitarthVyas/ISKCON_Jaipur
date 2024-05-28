@@ -3,8 +3,12 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { carousels } from "./carouselData";
 import "./Carousel.css";
+import { Playfair_Display } from "next/font/google";
+
+const play = Playfair_Display({
+  subsets: ["latin"],
+});
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -60,7 +64,7 @@ const settings = {
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />,
   autoplay: true, // Enable autoplay
-  autoplaySpeed: 5000, // Set autoplay speed to 3000 milliseconds (3 seconds)
+  autoplaySpeed: 3000, // Set autoplay speed to 3000 milliseconds (3 seconds)
   responsive: [
     {
       breakpoint: 1024,
@@ -77,7 +81,7 @@ const settings = {
   ],
 };
 
-const Carousel = () => {
+const Carousel = ({ data }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isZoomed, setIsZoomed] = useState(false);
 
@@ -91,13 +95,21 @@ const Carousel = () => {
     setIsZoomed(false);
   };
 
+  // console.log(data)
+
   return (
-    <div className="w-10/12 sm:max-w-screen-2xl mx-auto px-4 pb-20">
+    <div className=" sm:w-10/12 sm:max-w-screen-2xl mx-auto px-4 pb-5 pt-10">
+      <h2 className={`pb-5 ${play.className} font-medium sm:text-5xl`}>
+        {data.title}
+      </h2>
+      <p className="text-lg pb-4 text-justify">
+        {data.content}
+      </p>
       <Slider {...settings}>
-        {carousels.map((image, index) => (
-          <div key={index} className="p-2 w-full h-full">
+        {data.img.map((image, index) => (
+          <div key={index} className="px-2 w-full h-full">
             <img
-              className={`sm:h-[400px] m-auto w-[257px] h-full object-cover cursor-pointer ${
+              className={`h-auto m-auto w-[257px] object-cover cursor-pointer ${
                 isZoomed ? "cursor-zoom-out" : "cursor-zoom-in"
               }`}
               src={image}

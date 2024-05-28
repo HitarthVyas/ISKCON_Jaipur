@@ -17,7 +17,7 @@ export const services = [
       "Goal Setting",
       "Study Skills",
       "Career Exploration",
-      "Resume Writing",
+      // "Resume Writing",
       "Time Management",
     ],
   },
@@ -28,8 +28,9 @@ export const services = [
       "Communication Skills",
       "Conflict Resolution",
       "Peer Pressure Management",
-      "Bullying Prevention",
+      // "Bullying Prevention",
       "Building Healthy Relationships",
+      "Peer Pressure Resistance",
     ],
   },
   {
@@ -38,7 +39,6 @@ export const services = [
     subtopics: [
       "Prevention Strategies",
       "Understanding Addiction",
-      "Peer Pressure Resistance",
       "Decision-Making Skills",
       "Seeking Help and Support",
     ],
@@ -71,9 +71,9 @@ export const services = [
     subtopics: [
       "Exploring Cultural Identity",
       "Diversity and Inclusion Education",
-      "Addressing Discrimination",
+      // "Addressing Discrimination",
       "Cross-Cultural Communication",
-      "Advocacy for Social Justice",
+      // "Advocacy for Social Justice",
     ],
   },
   {

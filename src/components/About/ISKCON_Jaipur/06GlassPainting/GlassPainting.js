@@ -1,5 +1,6 @@
 import { Dancing_Script } from "next/font/google";
 import Carousel from "./Carousel";
+import { acharyaData, dasavatarData, lilaData } from "./carouselData";
 
 const dancing = Dancing_Script({
   subsets: ["latin"],
@@ -9,14 +10,13 @@ const GlassPainting = () => {
   return (
     <>
       <div
-        className="relative text-center bg-cover bg-center-top bg-fixed z-1"
+        className="relative text-center bg-cover bg-center bg-fixed z-1"
         style={{
-          backgroundImage:
-            "url('/IJP/glassbg.jpg')",
+          backgroundImage: "url('/IJP/glass/krsna-flute.jpg')",
         }}
       >
         <div className=" py-10 inset-0 flex flex-col justify-center items-center bg-gradient-to-r from-[#d17a29]/40 to-red-400/30 text-white">
-          <div className="w-full sm:w-11/12 bg-black/60">
+          <div className="px-4 w-full sm:w-11/12 bg-black/60">
             <h1
               className={`${dancing.className} pb-4 xl:text-7xl sm:text-5xl text-[2.5rem] pt-2`}
             >
@@ -25,49 +25,42 @@ const GlassPainting = () => {
             <div className="flex flex-col lg:flex-row items-center justify-center gap-1 sm:gap-5 2xl:py-8">
               <img
                 src="/IJP/glassimg.jpg"
-                className="h-[200px] sm:h-[300px] xl:h-[400px]"
+                className="h-[200px] sm:h-[300px] xl:h-[400px] pb-0 md:pb-5"
               />
-              <div className="max-w-[900px] p-3">
+              <div className="max-w-[900px] p-3 pb-6">
                 <p className="text-justify text-sm xl:text-lg hidden sm:block">
-                  Jaipur&apos;s renowned artistry inspired us to create a temple
-                  that not only serves devotees but also enlightens people
-                  worldwide about Vedic Culture through Art. Thus, we present
-                  the
-                  <b className="text-gray-200">
-                    &quot;Windows to the Spiritual World Gallery, &quot;
-                  </b>
-                  featuring fifty-two stained glass windows— the world&apos;s
-                  largest display of its kind. The initial twelve windows will
-                  be eleven feet high and four feet wide, followed by forty
-                  windows at twelve feet high and six feet wide.
+                  It was a long Journey to complete (from 2006 to 2018). There
+                  is no temple in the world that has Stained Glass Paintings of
+                  Lord Krishna&apos;s Lila. When the leaders of the Australian
+                  Stained Glass society visited, they declared this work of art
+                  as world class workmanship, equal of anywhere in the world. We
+                  are proud to be the first ISKCON Temple in the world to have
+                  this honor.
                 </p>
-                <p className="text-justify xl:text-lg text-sm mb-0 hidden sm:block">
-                  Master Artist Mr. Colin Greenwood, inspired by his encounter
-                  with His Divine Grace Srila Prabhupada in 1972, has taken
-                  residence at the Sri Sri Giridhari Dauji Mandir to fulfill his
-                  dream of creating exceptional stained glass artistry. He is
-                  setting up his studio and arranging specialized materials to
-                  bring this vision to life. This project not only aims to
-                  delight devotees but also to revive interest in stained glass
-                  as an art form, inspiring people from all walks of life with
-                  the beauty and depth of Vedic Culture.
+                <p className="text-justify xl:text-lg text-sm mb-0 sm:block">
+                  Mr. Colin Greenwood from Sydney (Australia), is the artist for
+                  this wonderful work. He had met Srila Prabhupada early and
+                  always had a desire to present Krishna Consciousness in
+                  Stained Glass. Working in our ISKCON Auckland Temple he made a
+                  magnificent window before coming to Jaipur where he setup the
+                  production studio and trained local men to produce
+                  stained glass windows.
                 </p>
                 <p className="sm:hidden block text-justify">
-                  Inspired by Jaipur&apos;s artistry, our temple, the
-                  &quot;Windows to the Spiritual World Gallery, &quot; showcases
-                  Vedic Culture through fifty-two stained glass windows—the
-                  world&apos;s largest display of its kind. Initial windows
-                  stand at eleven feet high and four feet wide, followed by
-                  forty windows at twelve feet high and six feet wide. Master
-                  Artist Mr. Colin Greenwood, inspired by Srila Prabhupada in
-                  1972, resides at Sri Sri Giridhari Dauji Mandir to create
-                  exceptional stained glass artistry, reviving interest in the
-                  craft and inspiring others with the beauty of Vedic Culture.
+                  The glass is all handmade, from America, with thousands of
+                  colors and textures. The faces and many parts of the dresses
+                  are painted with ceramic paint and fired in an oven at over
+                  1200 degrees so that the paint becomes a part of the glass
+                  giving a life span of over 600 years.
                 </p>
               </div>
             </div>
 
-            <Carousel />
+            <div>
+              <Carousel data={dasavatarData} />
+              <Carousel data={acharyaData} />
+              <Carousel data={lilaData} />
+            </div>
           </div>
         </div>
       </div>
