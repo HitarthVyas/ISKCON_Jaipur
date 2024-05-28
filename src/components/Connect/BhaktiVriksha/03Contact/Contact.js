@@ -18,7 +18,7 @@ const Contact = () => {
       </h2>
       <div className="py-10 px-6 flex justify-center gap-5 flex-wrap">
         {contactData.map((item, index) => (
-          <div className="w-[220px] rounded hover:scale-105 transition-all duration-500 pt-2 pb-3 pl-2 bg-gradient-to-br to-[#d17a29] from-black text-white">
+          <div key={index} className="w-[220px] rounded hover:scale-105 transition-all duration-500 pt-2 pb-3 pl-2 bg-gradient-to-br to-[#d17a29] from-black text-white">
             <h6 className="pb-2 font-medium">{item.name}</h6>
             <h5 className="">{item.number}</h5>
             <div className="flex pt-3">
