@@ -28,7 +28,7 @@ const handleCopy = (text) => {
     });
 };
 
-const PujaSevaPaymentSection = () => {
+const GauSevaPaymentSection = () => {
   return (
     <div
       id="paymentSection"
@@ -90,4 +90,4 @@ const PujaSevaPaymentSection = () => {
   );
 };
 
-export default PujaSevaPaymentSection;
+export default GauSevaPaymentSection;
