@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 import { haatData } from "./haatData";
 import Image from "next/image";
 import { Dancing_Script, Playfair } from "next/font/google";
@@ -13,26 +14,44 @@ const play = Playfair({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
+const popOutTitleVariants = {
+  hidden: { scale: 0.5, opacity: 0 },
+  visible: { scale: 1, opacity: 1, transition: { duration: 0.5, delay: 0.2 } },
+};
+
+const popOutButtonVariants = {
+  hidden: { scale: 0.5, opacity: 0 },
+  visible: { scale: 1, opacity: 1, transition: { duration: 0.5, delay: 0.4 } },
+};
+
 const VrindavanaHaat = () => {
   return (
     <div>
       <div
-        className="relative h-screen w-full bg-cover bg-top"
+        className="relative h-screen w-full bg-cover bg-fixed"
         style={{ backgroundImage: "url('/Explore/VrindavanHaat/haat-banner.jpg')" }}
       >
-        <h1
+        <motion.h1
           className={`${dancing.className} absolute p-4 w-full text-center text-white text-5xl sm:text-7xl top-1/2`}
           style={{ textShadow: "0px 0px 5px black" }}
+          variants={popOutTitleVariants}
+          initial="hidden"
+          animate="visible"
         >
           Vrindavan Haat
-        </h1>
+        </motion.h1>
         <Link
           href="#contact"
           className="absolute w-full hover:scale-110 transition-all duration-300 flex justify-center top-[80vh] no-underline hover:no-underline active:no-underline"
         >
-          <button className="py-3 px-6 rounded-full text-xl bg-[#d17a29] text-white font-semibold top-[80vh]">
+          <motion.button
+            className="py-3 px-6 rounded-full text-xl bg-[#d17a29] text-white font-semibold top-[80vh]"
+            variants={popOutButtonVariants}
+            initial="hidden"
+            animate="visible"
+          >
             Contact Us
-          </button>
+          </motion.button>
         </Link>
       </div>
 

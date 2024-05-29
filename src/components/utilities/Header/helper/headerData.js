@@ -13,6 +13,7 @@ export const headerOptions = [
       { subtitle: "Nitya Seva", link: "nitya-seva" },
       { subtitle: "Food For Life", link: "food-for-life" },
       { subtitle: "Gau Seva", link: "gau-seva" },
+      { subtitle: "Gau Seva", link: "sadhu-seva" },
       { subtitle: "Explore More..", link: "donation" },
     ]
   },

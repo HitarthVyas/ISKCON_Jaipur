@@ -5,12 +5,18 @@ import ContactForm from "@/components/Contact/02ContactForm/ContactForm";
 import Queries from "@/components/Contact/02Queries/Queries";
 import Maps from "@/components/Contact/03Map/Maps";
 import SocialMedia from "@/components/Contact/04SocialMedia/SocialMedia";
+import { motion } from "framer-motion";
 import { Architects_Daughter, Dancing_Script, Playfair } from "next/font/google";
 
-const play = Dancing_Script({
+const dancing = Dancing_Script({
   subsets: ["latin"],
   // weight: ["400"],
 })
+
+const popOutTitleVariants = {
+  hidden: { scale: 0.5, opacity: 0 },
+  visible: { scale: 1, opacity: 1, transition: { duration: 0.5, delay: 0.2 } },
+};
 
 const page = () => {
   return (
@@ -23,12 +29,15 @@ const page = () => {
         style={{ backgroundImage: "url('/Contact/Contact_Us.png')" }}
         className="w-full h-screen bg-cover mt-16 flex items-center justify-center"
       >
-        <h1
-          className={`${play.className} text-gray-100 text-6xl sm:text-8xl text-center`}
-          style={{ textShadow: "0px 0px 5px black, 0px 0px 5px black" }}
-        >
-          Contact Us
-        </h1>
+        <motion.h1
+            className={`${dancing.className} absolute p-4 w-full text-center text-white text-5xl sm:text-7xl top-1/2`}
+            style={{ textShadow: "0px 0px 5px black" }}
+            variants={popOutTitleVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            Contact Us
+          </motion.h1>
       </div>
       <ContactIcons />
       <div className="flex flex-wrap gap-10 items-center justify-evenly pb-10">
