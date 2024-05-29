@@ -137,7 +137,7 @@ const MainPoster = () => {
         
       </div>
 
-      <div className="bg-[#f9f9f9]">
+      <div className="">
         <div className="mt-2 mx-3 text-center  text-[#000000] p-2">
           <h2>Donation</h2>
         </div>
