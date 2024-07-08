@@ -281,7 +281,7 @@ const MainPoster = () => {
           <h1
             className={`font-bold text-white text-[30px] sm:text-[50px] text-center ${caveat1.className}`}
           >
-            Be the Nitya Sewak of Krishna
+            Be A Nitya Sewak of Krishna 
           </h1>
           <div className="xl:px-64 pb-3">
             <p
