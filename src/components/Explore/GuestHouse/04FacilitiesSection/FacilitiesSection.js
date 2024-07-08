@@ -66,7 +66,7 @@ export default function FacilitiesSection(){
               </div>
               <div className="w-[242px] h-[26px] flex justify-center items-center mt-[10px]">
                 <h2 className="text-[22px] text-[#091826] font-medium">
-                  Fiber Wifi
+                  Fiber WiFi
                 </h2>
               </div>
             </div>
