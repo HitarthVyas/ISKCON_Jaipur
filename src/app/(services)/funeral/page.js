@@ -1,10 +1,10 @@
-"use client"
-import Intro from "@/components/Services/HouseProgram/01Intro/Intro";
-import Activities from "@/components/Services/HouseProgram/02Activities/Activities";
+"use client";
+import FunerallIntro from "@/components/Services/Funeral/01FuneralIntro/FuneralIntro";
+import FuneralActivites from "@/components/Services/Funeral/02FuneralActivites/FuneralActivites";
 import { motion } from "framer-motion";
 import { Dancing_Script, Playfair } from "next/font/google";
 import Link from "next/link";
-
+import React from "react";
 const play = Playfair({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
@@ -24,12 +24,21 @@ const popOutButtonVariants = {
   visible: { scale: 1, opacity: 1, transition: { duration: 0.5, delay: 0.4 } },
 };
 
-const Page = () => {
+const page = () => {
+  const handleScrollToContactSection = () => {
+    const contactSection = document.getElementById("contactSection");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div> 
+    <div>
       <div
         className="relative h-screen w-full bg-cover bg-top"
-        style={{ backgroundImage: "url('/Services/HouseProgram/house-program.png')" }}
+        style={{
+          backgroundImage: "url('/Services/HouseProgram/funeral.webp')",
+        }}
       >
         <motion.h1
           className={`${dancing.className} absolute p-4 w-full text-center text-white text-5xl sm:text-7xl top-1/2`}
@@ -38,32 +47,28 @@ const Page = () => {
           initial="hidden"
           animate="visible"
         >
-          House Program
+          <span
+            style={{ backgroundColor: "rgba(0, 0, 0, 0.5)", padding: "0 10px" }}
+          >
+            Prayer For The Departed Soul
+          </span>
         </motion.h1>
-        <Link
-          href="#contact"
-          className="absolute w-full flex justify-center top-[80vh] no-underline hover:no-underline active:no-underline"
-        >
+        <div className="absolute w-full flex justify-center top-[80vh] no-underline hover:no-underline active:no-underline">
           <motion.button
+            onClick={handleScrollToContactSection}
             className="py-3 px-6 rounded-full text-xl bg-[#d17a29] text-white font-semibold top-[80vh]"
-            variants={popOutButtonVariants}
             initial="hidden"
             animate="visible"
           >
             Contact Us
           </motion.button>
-        </Link>
+        </div>
       </div>
-      <Intro />
-      <Activities />
-      <h2 className={`font-medium text-orange-900 text-center py-10`} id="contact">
-        <span className={`${play.className} text-5xl font-semibold`}>
-          CONTACT US:
-        </span>{" "}
-        9649689649
-      </h2>
+      
+      <FunerallIntro />
+      <FuneralActivites />
     </div>
   );
 };
 
-export default Page;
+export default page;

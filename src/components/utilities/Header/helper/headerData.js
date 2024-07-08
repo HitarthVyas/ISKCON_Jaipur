@@ -32,9 +32,9 @@ export const headerOptions = [
       { subtitle: "Temple", link: "iskcon-jaipur" },
       { subtitle: "Guest House", link: "guest-house" },
       { subtitle: "Govinda's", link: "govindas" },
-      // { subtitle: "D' Cafe", link: "dcafe" },
       { subtitle: "Vrindavan Haat", link: "vrindavan-haat" },
-      { subtitle: "Gau Shala", link: "gau-seva" }
+      { subtitle: "Gau Shala", link: "gau-seva" },
+      { subtitle: "Steering Committee", link: "steering-committee" },
     ]
   },
   {
@@ -44,6 +44,7 @@ export const headerOptions = [
       { subtitle: "Community Hall", link: "community-hall" },
       { subtitle: "Puja", link: "puja-seva" },
       { subtitle: "Yatra", link: "yatra" },
+      { subtitle: "Funeral", link: "funeral" },
       { subtitle: "Lifetime Member", link: "life-member" }
     ]
   }
