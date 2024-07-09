@@ -2,6 +2,7 @@
 import React, { useState, useRef } from "react";
 import { Caveat, Playfair_Display, Quicksand, Oswald } from "next/font/google";
 import NityaSevaPaymentSection from "../02NityaSevaPaymentSection/NityaSevaPaymentSection";
+import PriceDistribution from "../../FoodForLife/04PriceDistribution/PriceDistribution";
 
 const caveat1 = Caveat({
   subsets: ["latin"],
@@ -224,24 +225,9 @@ const MainPoster = () => {
               </React.Fragment>
             ))}
 
-            <div className="mx-[50px] lg:mx-[200px] max-sm:mx-[20px] flex flex-col py-[60px]">
-              <div className="pb-[10px] flex justify-center items-center">
-                <h1 className={`${oswald1.className} text-white`}>
-                  Nitya Seva
-                </h1>
-              </div>
-              <div className="pb-[20px]">
-                <p
-                  className={`text-[25px] text-justify font-medium ${oswald1.className} text-white`}
-                  style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.5)" }}
-                >
-                  To make progress in Krishna consciousness, we always need the
-                  blessing of the Lord on your special day. And when the Lord is
-                  pleased with our services, we will surely get the unlimited
-                  blessing from the Lord Shree Krishna
-                </p>
-              </div>
-            </div>
+            
+              <PriceDistribution />
+            
           </div>
           <div className="bg-[url('/Donation/NityaSeva/reverse_curve.svg')] h-[100px] bg-cover bg-center w-full z-10 mt-[20px]"></div>
         </div>

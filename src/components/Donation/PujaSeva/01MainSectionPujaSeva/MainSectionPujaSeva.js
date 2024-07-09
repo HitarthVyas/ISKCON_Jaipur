@@ -5,6 +5,7 @@ import { Caveat, Playfair_Display } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import PujaSevaPaymentSection from "../02PujaSevaPaymentSection/PujaSevaPaymentSection";
+import PriceDistribution from "../../FoodForLife/04PriceDistribution/PriceDistribution";
 
 const caveat1 = Caveat({
   subsets: ["latin"],
@@ -234,6 +235,7 @@ const MainSectionPujaSeva = () => {
           ))}
         </div>
         <PujaSevaPaymentSection />
+        <PriceDistribution />
       </div>
     </>
   );

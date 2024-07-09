@@ -13,6 +13,7 @@ import GauSevaPaymentSection from "../03GauSevaPaymentSection/GauSevaPaymentSect
 import CowCarousel from "../02Carousel/CowCarousel";
 import AdoptCow from "../04AdoptCow/AdoptCow";
 import GauSeva from "@/app/(donation)/gau-seva/page";
+import PriceDistribution from "../../FoodForLife/04PriceDistribution/PriceDistribution";
 
 const caveat1 = Caveat({
   subsets: ["latin"],
@@ -239,6 +240,7 @@ const MainPoster = () => {
           <GauSevaPaymentSection />
         </div>
 
+        <PriceDistribution />
         <div  id="contactSection"> 
           <h1
             className="text-white text-center text-5xl max-sm:text-2xl py-16 px-5"
