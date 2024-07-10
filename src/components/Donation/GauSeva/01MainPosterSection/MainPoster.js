@@ -14,6 +14,7 @@ import CowCarousel from "../02Carousel/CowCarousel";
 import AdoptCow from "../04AdoptCow/AdoptCow";
 import GauSeva from "@/app/(donation)/gau-seva/page";
 import PriceDistribution from "../../FoodForLife/04PriceDistribution/PriceDistribution";
+import DonationPlane from "../05DonationPlane/DonationPlane";
 
 const caveat1 = Caveat({
   subsets: ["latin"],
@@ -235,6 +236,9 @@ const MainPoster = () => {
         </div>
         <div className="mt-10 w-full">
           <AdoptCow />
+        </div>
+        <div className="w-full">
+          <DonationPlane />
         </div>
         <div className="mt-5 mb-5 w-full">
           <GauSevaPaymentSection />
