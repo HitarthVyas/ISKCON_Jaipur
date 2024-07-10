@@ -38,6 +38,7 @@ const page = () => {
         className="relative h-screen w-full bg-cover bg-top"
         style={{
           backgroundImage: "url('/Services/HouseProgram/funeral.webp')",
+          backgroundSize: "cover",
         }}
       >
         <motion.h1
