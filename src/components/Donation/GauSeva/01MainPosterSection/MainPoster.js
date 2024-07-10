@@ -116,7 +116,7 @@ const MainPoster = () => {
   };
 
   const handleScrollToPaymentSection = () => {
-    const paymentSection = document.getElementById("paymentSection");
+    const paymentSection = document.getElementById("paymentSection1");
     if (paymentSection) {
       paymentSection.scrollIntoView({ behavior: "smooth" });
     }
@@ -240,7 +240,7 @@ const MainPoster = () => {
         <div className="w-full">
           <DonationPlane />
         </div>
-        <div className="mt-5 mb-5 w-full">
+        <div id="paymentSection1" className="mt-5 mb-5 w-full">
           <GauSevaPaymentSection />
         </div>
 

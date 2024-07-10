@@ -34,7 +34,7 @@ const feed = [
 ];
 
 const handleScrollToCard = () => {
-  const paymentSection = document.getElementById("paymentSection");
+  const paymentSection = document.getElementById("paymentSection1");
   if (paymentSection) {
     paymentSection.scrollIntoView({ behavior: "smooth" });
   }
