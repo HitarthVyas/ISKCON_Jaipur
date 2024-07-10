@@ -13,17 +13,17 @@ const dosis = Dosis({
 const feed = [
   {
     id: "1",
-    Title: "Mineral Compound /Month",
-    Price: "₹ 8,000",
+    Title: "Mineral Compound 1 Month",
+    Price: "₹ 15,000",
   },
   {
     id: "2",
-    Title: "Dry Fruits /Month",
+    Title: "Dry Fruits 1 Month",
     Price: "₹ 25,000",
   },
   {
     id: "3",
-    Title: "Cow Adoption For 1 Month",
+    Title: "Cow Adoption For 1 Year",
     Price: "₹ 21,000",
   },
   {
