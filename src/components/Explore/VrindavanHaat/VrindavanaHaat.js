@@ -29,17 +29,22 @@ const VrindavanaHaat = () => {
     <div>
       <div
         className="relative h-screen w-full bg-cover bg-fixed"
-        style={{ backgroundImage: "url('/Explore/VrindavanHaat/haat-banner.jpg')" }}
+        style={{
+          backgroundImage: "url('/Explore/VrindavanHaat/haat-banner.jpg')",
+        }}
       >
-        <motion.h1
-          className={`${dancing.className} absolute p-4 w-full text-center text-white text-5xl sm:text-7xl top-1/2`}
-          style={{ textShadow: "0px 0px 5px black" }}
-          variants={popOutTitleVariants}
-          initial="hidden"
-          animate="visible"
-        >
-          Vrindavan Haat
-        </motion.h1>
+        <div className="absolute text-center w-full top-[25vh]">
+          <img src="/Explore/VrindavanHaat/hgtvpprji.png" className="h-72 m-auto" />
+          <motion.h1
+            className={`${dancing.className} p-4 -mt-12 pt-0 text-white text-5xl sm:text-7xl`}
+            style={{ textShadow: "0px 0px 5px black, 0px 0px 5px black" }}
+            variants={popOutTitleVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            Vrindavan Haat
+          </motion.h1>
+        </div>
         <Link
           href="#contact"
           className="absolute w-full hover:scale-110 transition-all duration-300 flex justify-center top-[80vh] no-underline hover:no-underline active:no-underline"
@@ -63,7 +68,10 @@ const VrindavanaHaat = () => {
         </h1>
         <div className="flex gap-10 flex-wrap justify-center">
           {haatData.map((haat, i) => (
-            <div key={i} className="bg-white w-72 sm:w-80 p-2 flex items-center flex-col hover:scale-105 transition-all duration-500">
+            <div
+              key={i}
+              className="bg-white w-72 sm:w-80 p-2 flex items-center flex-col hover:scale-105 transition-all duration-500"
+            >
               <div className="relative w-72 h-72 sm:w-80 sm:h-80">
                 <Image
                   src={`/Explore/VrindavanHaat/${haat.image}`}
