@@ -61,23 +61,23 @@ const MainPoster = () => {
   };
 
   const handleMouseLeave = (button) => {
-    setShowUpArrow((prev) => ({ ...prev, [button]: false })); // Hide the up arrow for the hovered button
+    setShowUpArrow((prev) => ({ ...prev, [button]: false })); // Hide the up arrow for the hovered button 
   };
 
   const scrollToDonationSection = () => {
     // Scroll to the donation section
     if (donationSectionRef.current) {
       window.scrollTo({
-        top: donationSectionRef.current.offsetTop,
+        top: donationSectionRef.current.offsetTop, 
         behavior: "smooth",
       });
     }
   };
 
   const handleScrollToPaymentSection = () => {
-    const paymentSection = document.getElementById("paymentSection");
-    if (paymentSection) {
-      paymentSection.scrollIntoView({ behavior: "smooth" });
+    const nityaSevaPaymentSection = document.getElementById("nityaSevaPaymentSection");
+    if (nityaSevaPaymentSection) {
+      nityaSevaPaymentSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -237,7 +237,7 @@ const MainPoster = () => {
 
       <div className="bg-gradient-to-b from-[#500a0a] via-amber-600 to-amber-400 py-[70px]">
         <div className="w-full h-16" id="paymentSection"></div>
-        <div className=" mx-[60px] max-sm:mx-[2px] flex flex-col">
+        <div id="nityaSevaPaymentSection" className=" mx-[60px] max-sm:mx-[2px] flex flex-col">
           <NityaSevaPaymentSection />
         </div>
       </div>
