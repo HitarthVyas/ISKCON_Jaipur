@@ -1,5 +1,6 @@
 
 "use client";
+import PriceDistribution from "@/components/Donation/FoodForLife/04PriceDistribution/PriceDistribution";
 import MainPoster from "@/components/Donation/SadhuSeva/01MainPoster/MainPoster";
 import SadhuDonationSection from "@/components/Donation/SadhuSeva/02SadhuDontaionSection/SadhuDontaionSection";
 import SadhuCardSection from "@/components/Donation/SadhuSeva/03SadhuCardSection/SadhuCardSection";
@@ -16,6 +17,7 @@ const SadhuSeva = () => {
             <SadhuDonationSection /> 
             <SadhuCardSection />
             <SadhuPaymentSection />
+            <PriceDistribution />
           </div>
         </div>
       </div>

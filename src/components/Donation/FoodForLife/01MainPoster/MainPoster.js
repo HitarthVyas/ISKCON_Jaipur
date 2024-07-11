@@ -1,7 +1,14 @@
 "use client";
 import React, { useState, useRef } from "react";
-import { Merriweather_Sans, Oswald, Dosis } from "next/font/google";
+import {
+  Merriweather_Sans,
+  Oswald,
+  Dosis,
+  Architects_Daughter,
+} from "next/font/google";
 import FoodForLifePaymentSection from "../02FoodForLifePaymentSection/FoodForLifePaymentSection";
+import CirclePoster from "../03CircleCarousel/CirclePoster";
+import PriceDistribution from "../04PriceDistribution/PriceDistribution";
 
 const merri = Merriweather_Sans({
   subsets: ["latin"],
@@ -19,6 +26,11 @@ const dosis = Dosis({
   subsets: ["latin"],
 });
 
+const Architects = Architects_Daughter({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
 const feed = [
   {
     id: "1",
@@ -27,43 +39,43 @@ const feed = [
   },
   {
     id: "2",
-    Title: "Donate 21 Meals",
-    Price: "₹ 525 ~ Do your part and contribute this amount.",
+    Title: "21 Dona",
+    Price: "₹ 1,050 ~ Do your part and contribute this amount.",
   },
   {
     id: "3",
-    Title: "Donate 51 Meals",
-    Price: "₹ 1,275 ~ Do your part and contribute this amount.",
+    Title: "51 Dona",
+    Price: "₹ 2,500 ~ Do your part and contribute this amount.",
   },
   {
     id: "4",
-    Title: "Donate 151 Meals",
+    Title: "151 Dona",
     Price: "₹ 3,775 ~ Do your part and contribute this amount.",
   },
   {
     id: "5",
-    Title: "Donate 251 Meals",
-    Price: "₹ 6,225 ~ Do your part and contribute this amount.",
+    Title: "251 Dona",
+    Price: "₹ 7,550 ~ Do your part and contribute this amount.",
   },
   {
     id: "6",
-    Title: "Donate 501 Meals",
-    Price: "₹ 12,525 ~ Do your part and contribute this amount.",
+    Title: "501 Dona",
+    Price: "₹ 25,050 ~ Do your part and contribute this amount.",
   },
   {
     id: "7",
-    Title: "Donate 1,001 Meals",
-    Price: "₹ 25,025 ~ Do your part and contribute this amount.",
+    Title: "1,001 Dona",
+    Price: "₹ 50,050 ~ Do your part and contribute this amount.",
   },
   {
     id: "8",
-    Title: "Donate 3,001 Meals",
-    Price: "₹ 75,025 ~ Do your part and contribute this amount.",
+    Title: "3,001 Dona",
+    Price: "₹ 150,050 ~ Do your part and contribute this amount.",
   },
   {
     id: "9",
-    Title: "Donate 5,001 Meals",
-    Price: "₹ 1,25,025 ~ You can serve these meals to needy people.",
+    Title: "5,001 Dona",
+    Price: "₹ 2,50,050 ~ You can serve these meals to needy people.",
   },
 ];
 
@@ -101,6 +113,13 @@ const MainPoster = () => {
     }
   };
 
+  const handleScrollToDonationSection = () => {
+    const donationSection = document.getElementById("donationSection");
+    if (donationSection) {
+      donationSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div className="bg-[url('/Donation/FoodForNeed/BannerforHome.jpg')] h-[100vh]   bg-cover bg-center w-full mt-[60px]">
@@ -121,16 +140,16 @@ const MainPoster = () => {
             &quot;Join our food donation drive and be a hero in the fight
             against hunger! Your support can transform lives, providing
             nutritious meals to those who need them most. Together, we can
-            create a brighter future and bring hope to our community. Let&apos;s come
-            together to make a powerful impact and change lives for the better!
-            &quot;
+            create a brighter future and bring hope to our community. Let&apos;s
+            come together to make a powerful impact and change lives for the
+            better! &quot;
           </p>
 
           <button
             className={`relative bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% mt-3 font-bold text-[#ffffff] text-[20px] py-2 px-4 sm:py-3 sm:px-6 md:py-4 md:px-8 rounded-full overflow-hidden`}
             onMouseEnter={() => handleMouseEnter("button1")}
             onMouseLeave={() => handleMouseLeave("button1")}
-            onClick={scrollToDonationSection}
+            onClick={handleScrollToDonationSection}
           >
             Donate Now{" "}
             {showUpArrow.button1 && (
@@ -149,35 +168,44 @@ const MainPoster = () => {
       <div className="w-full h-[50px] bg-[#9a9fe0]"></div>
 
       <div
-        ref={donationSectionRef}
         className="relative bg-[url('/Donation/FoodForNeed/mv2.jpg')] bg-cover bg-center w-full"
       >
         <div
           style={{
-            backgroundImage: "linear-gradient(to bottom, #9a9fe0, #38002099)",
+            backgroundImage: "linear-gradient(to bottom, #9a9fe0, #380020d6)",
             paddingBottom: "44px",
           }}
         >
-          <div className=" mx-[20px] lg:mx-[220px] py-[40px]">
-            <div className=" flex">
+          <div className=" mx-[20px] lg:mx-[220px] py-[60px] max-[640px]:py-0  max-[640px]:mb-20">
+            <div className="flex flex-col">
               <p
-                className={`text-[30px] py-[30px] font-medium text-[#ffffff] text-center ${oswa.className}`}
+                className={`text-[20px] py-[20px] font-medium text-[#ffffff] text-center ${oswa.className}`}
               >
-                &quot;Join our food donation drive to fight hunger and provide
-                nourishing meals to those in need. Your support can make a world
-                of difference. Together, we can create meaningful change and
-                bring hope to our community. Let&apos;s come together and make a
-                real impact!&quot;
-                {/* "Support our food donation drive, combating hunger by offering
-                nutritious meals to the needy. Your backing holds transformative
-                potential. Let&apos;s unite for change, effecting tangible
-                results together!" */}
+                Food for Need is dedicated to alleviating hunger by distributing
+                food to those in need across various communities. Our efforts
+                reach out to diverse locations such as
+                <span className="highlight text-[#e22b2b]"> Govind Dev Ji</span>
+                ,
+                <span className="highlight text-[#e22b2b]">
+                  Anath Ashram,local colleges,
+                </span>
+                <span className="highlight text-[#e22b2b]">
+                  {" "}
+                  bastis (slum areas)
+                </span>
+                . By targeting these areas, we ensure that nutritious meals are
+                provided to vulnerable populations, including the homeless,
+                students in need, and residents of underprivileged
+                neighborhoods. Join us in our mission to combat hunger and make
+                a meaningful impact in the lives of many.
               </p>
             </div>
           </div>
 
+          <CirclePoster />
+
           {/* donation section start */}
-          <div className=" flex flex-col items-center mb-[40px]">
+          <div id="donationSection" className=" flex flex-col items-center mb-[40px]">
             {feed.map((feed) => (
               <>
                 <div className=" flex flex-col w-3/4 pt-[27px] pb-[10px] md:flex-row gap-1 ">
@@ -219,6 +247,8 @@ const MainPoster = () => {
           </div>
           {/* donation section end */}
           <FoodForLifePaymentSection />
+           
+          <PriceDistribution />
         </div>
       </div>
     </>

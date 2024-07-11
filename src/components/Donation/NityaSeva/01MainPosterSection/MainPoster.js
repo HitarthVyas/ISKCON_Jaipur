@@ -2,6 +2,7 @@
 import React, { useState, useRef } from "react";
 import { Caveat, Playfair_Display, Quicksand, Oswald } from "next/font/google";
 import NityaSevaPaymentSection from "../02NityaSevaPaymentSection/NityaSevaPaymentSection";
+import PriceDistribution from "../../FoodForLife/04PriceDistribution/PriceDistribution";
 
 const caveat1 = Caveat({
   subsets: ["latin"],
@@ -60,23 +61,23 @@ const MainPoster = () => {
   };
 
   const handleMouseLeave = (button) => {
-    setShowUpArrow((prev) => ({ ...prev, [button]: false })); // Hide the up arrow for the hovered button
+    setShowUpArrow((prev) => ({ ...prev, [button]: false })); // Hide the up arrow for the hovered button 
   };
 
   const scrollToDonationSection = () => {
     // Scroll to the donation section
     if (donationSectionRef.current) {
       window.scrollTo({
-        top: donationSectionRef.current.offsetTop,
+        top: donationSectionRef.current.offsetTop, 
         behavior: "smooth",
       });
     }
   };
 
   const handleScrollToPaymentSection = () => {
-    const paymentSection = document.getElementById("paymentSection");
-    if (paymentSection) {
-      paymentSection.scrollIntoView({ behavior: "smooth" });
+    const nityaSevaPaymentSection = document.getElementById("nityaSevaPaymentSection");
+    if (nityaSevaPaymentSection) {
+      nityaSevaPaymentSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -187,7 +188,7 @@ const MainPoster = () => {
               "linear-gradient(180deg, rgba(100, 47, 21, 0.8) 0%, rgba(247, 202, 24, 0.8) 100%)",
           }}
         >
-          <div className="flex flex-col items-center pt-10 mb-[40px]">
+          <div className="flex flex-col items-center mb-[40px]">
             {item.map((item) => (
               <React.Fragment key={item.id}>
                 <div className="flex flex-col w-3/4 pt-[27px] pb-[10px] md:flex-row gap-1">
@@ -224,24 +225,9 @@ const MainPoster = () => {
               </React.Fragment>
             ))}
 
-            <div className="mx-[50px] lg:mx-[200px] max-sm:mx-[20px] flex flex-col py-[60px]">
-              <div className="pb-[10px] flex justify-center items-center">
-                <h1 className={`${oswald1.className} text-white`}>
-                  Nitya Seva
-                </h1>
-              </div>
-              <div className="pb-[20px]">
-                <p
-                  className={`text-[25px] text-justify font-medium ${oswald1.className} text-white`}
-                  style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.5)" }}
-                >
-                  To make progress in Krishna consciousness, we always need the
-                  blessing of the Lord on your special day. And when the Lord is
-                  pleased with our services, we will surely get the unlimited
-                  blessing from the Lord Shree Krishna
-                </p>
-              </div>
-            </div>
+            
+              <PriceDistribution />
+            
           </div>
           <div className="bg-[url('/Donation/NityaSeva/reverse_curve.svg')] h-[100px] bg-cover bg-center w-full z-10 mt-[20px]"></div>
         </div>
@@ -251,7 +237,7 @@ const MainPoster = () => {
 
       <div className="bg-gradient-to-b from-[#500a0a] via-amber-600 to-amber-400 py-[70px]">
         <div className="w-full h-16" id="paymentSection"></div>
-        <div className=" mx-[60px] max-sm:mx-[2px] flex flex-col">
+        <div id="nityaSevaPaymentSection" className=" mx-[60px] max-sm:mx-[2px] flex flex-col">
           <NityaSevaPaymentSection />
         </div>
       </div>
@@ -281,7 +267,7 @@ const MainPoster = () => {
           <h1
             className={`font-bold text-white text-[30px] sm:text-[50px] text-center ${caveat1.className}`}
           >
-            Be the Nitya Sewak of Krishna
+            Be A Nitya Sewak of Krishna 
           </h1>
           <div className="xl:px-64 pb-3">
             <p
