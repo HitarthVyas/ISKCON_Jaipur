@@ -5,6 +5,7 @@ export const headerOptions = [
       { subtitle: "Srila Prabhupada", link: "srila-prabhupada" },
       { subtitle: "ISKCON Jaipur", link: "iskcon-jaipur" },
       // { subtitle: "Gupt Vrindavan", link: "gupt-vrindavan" }
+      { subtitle: "Steering Committee", link: "steering-committee" },
     ]
   },
   {
@@ -14,7 +15,7 @@ export const headerOptions = [
       { subtitle: "Food For Life", link: "food-for-life" },
       { subtitle: "Gau Seva", link: "gau-seva" },
       { subtitle: "Sadhu Seva", link: "sadhu-seva" },
-      { subtitle: "Explore More..", link: "donation" },
+      { subtitle: "Explore More..", link: "explore-more" },
     ]
   },
   {
@@ -34,8 +35,6 @@ export const headerOptions = [
       { subtitle: "Govinda's", link: "govindas" },
       // { subtitle: "D' Cafe", link: "dcafe" },
       { subtitle: "Vrindavan Haat", link: "vrindavan-haat" },
-      { subtitle: "Gau Shala", link: "gau-seva" },
-      { subtitle: "Steering Committee", link: "steering-committee" },
     ]
   },
   {
