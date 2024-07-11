@@ -24,7 +24,7 @@ const Benefits = () => {
               {benefit.title}
             </h5> */}
             <p className="text-justify">
-              <span className="text-2xl">"</span> {benefit.content}
+              <span className="text-2xl">&quot;</span> {benefit.content}
             </p>
           </div>
         ))}
