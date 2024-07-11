@@ -12,6 +12,7 @@ import "flowbite";
 import Image from "next/image";
 import Link from "next/link";
 import ExploreMorePaymentSection from "../02ExploreMorePaymentSection/ExploreMorePaymentSection";
+import PriceDistribution from "../../FoodForLife/04PriceDistribution/PriceDistribution";
 
 const caveat1 = Caveat({
   subsets: ["latin"],
@@ -92,10 +93,10 @@ const ExploreMainPoster = () => {
     setShowUpArrow((prev) => ({ ...prev, [button]: false })); // Hide the up arrow for the hovered button
   };
 
-  const handleScrollToPaymentSection = () => {
-    const paymentSection = document.getElementById("paymentSection");
-    if (paymentSection) {
-      paymentSection.scrollIntoView({ behavior: "smooth" });
+  const handleScrollToDonationSection = () => {
+    const donationSection = document.getElementById("donationSection");
+    if (donationSection) {
+      donationSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -143,7 +144,7 @@ const ExploreMainPoster = () => {
               className={buttonClasses}
               onMouseEnter={() => handleMouseEnter("button1")}
               onMouseLeave={() => handleMouseLeave("button1")}
-              onClick={() => handleScrollToPaymentSection()}
+              onClick={() => handleScrollToDonationSection()}
             >
               Donate Now{" "}
               {showUpArrow.button1 && (
@@ -172,7 +173,7 @@ const ExploreMainPoster = () => {
           <div className="mx-3 text-center text-[#000000] p-2">
             <h2>Donation</h2>
           </div>
-          <div className="relative flex flex-col justify-center items-center py-4 mx-20 max-md:mx-2 h-full">
+          <div id="donationSection"  className="relative flex flex-col justify-center items-center py-4 mx-20 max-md:mx-2 h-full">
             <p
               className={`font-semibold text-[18px] max-[428px]:text-[14px] text-[#000000] text-center px-4  ${playfair.className}`}
             >
@@ -250,8 +251,11 @@ const ExploreMainPoster = () => {
             ))}
           </div>
         </div>
-
+        
         <ExploreMorePaymentSection />
+        <div className="relative">
+            <PriceDistribution />
+        </div>
       </div>
     </>
   );
