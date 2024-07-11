@@ -28,12 +28,6 @@ const donateLinks = [
   { name: "Explore More", href: "/explore-more" },
 ];
 
-const connectLinks = [
-  { name: "Youth Forum", href: "/iyf" },
-  { name: "Bhakti Vriksha", href: "/bhakti-vriksha" },
-  { name: "Kids & Teenager", href: "/kids-teenager" },
-]
-
 const socialMediaIcons = [
   { src: "/Home/Hero/social_media_icons/instagram.svg", alt: "Instagram", href: "https://www.instagram.com/iskconjaipur.official/?igsh=MWRqbnl4M3o2ZXpucw%3D%3D" },
   { src: "/Home/Hero/social_media_icons/youtube.svg", alt: "YouTube", href: "https://www.youtube.com/@iskcon_jaipur" },
@@ -43,8 +37,8 @@ const socialMediaIcons = [
 const FooterPage = () => {
   return (
     <>
-      <div className="bottom-0 bg-gradient-to-bl to-orange-400 from-black flex flex-col pt-10">
-        <div className="pt-[5px] overflow-x-hidden">
+      <div className="bottom-0 bg-gradient-to-bl to-orange-400 from-black flex flex-col py-16">
+        <div className="py-[20px] overflow-x-hidden">
           <Marquee
             className={`mb-[0px] text-[28px] text-[#ffffff] whitespace-no-wrap tracking-wide ${merri.className}`}
           >
@@ -75,7 +69,7 @@ const FooterPage = () => {
         </div>
 
         <div className="mt-[30px]">
-          <div className="mx-[20px] sm:mx-[10px] grid grid-cols-1 xl:grid-cols-3 gap-2">
+          <div className="mx-[20px] sm:mx-[50px] grid grid-cols-1 xl:grid-cols-3 gap-2">
             <div className="col-span-full xl:col-span-2">
               <div className="flex flex-col md:flex-row">
                 <div className="flex-1">
@@ -83,7 +77,7 @@ const FooterPage = () => {
                     <div className="flex-1 flex items-center justify-center">
                       <img
                         src="/Donation/CommanImg/monk.png"
-                        className="mb-[25px] h-60"
+                        className="mb-[25px]"
                         alt="Monk"
                       />
                     </div>
@@ -114,7 +108,7 @@ const FooterPage = () => {
                       </h3>
                       <ul
                         role="list"
-                        className="mt-3 space-y-2 pl-[0px] flex flex-col items-center justify-center"
+                        className="mt-3 space-y-4 pl-[0px] flex flex-col items-center justify-center"
                       >
                         {quickLinks.map((link, index) => (
                           <li key={index}>
@@ -136,31 +130,9 @@ const FooterPage = () => {
                       </h3>
                       <ul
                         role="list"
-                        className="mt-3 space-y-2 pl-[0px] flex flex-col items-center justify-center"
+                        className="mt-3 space-y-4 pl-[0px] flex flex-col items-center justify-center"
                       >
                         {donateLinks.map((link, index) => (
-                          <li key={index}>
-                            <Link
-                              href={link.href}
-                              className={`text-sm leading-3 text-[#FCD6A0] hover:text-gray-900 ${merri.className}`}
-                            >
-                              {link.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div className="flex-1">
-                      <h3
-                        className={`text-xl font-semibold leading-6 text-white flex items-center justify-center ${merri.className}`}
-                      >
-                        Connect
-                      </h3>
-                      <ul
-                        role="list"
-                        className="mt-3 space-y-2 pl-[0px] flex flex-col items-center justify-center"
-                      >
-                        {connectLinks.map((link, index) => (
                           <li key={index}>
                             <Link
                               href={link.href}
@@ -178,7 +150,7 @@ const FooterPage = () => {
             </div>
 
             <div className="col-span-full xl:col-span-1">
-              <div className="p-[5px] sm:p-[10px] flex flex-col justify-center items-center">
+              <div className="p-[5px] sm:p-[20px] flex flex-col justify-center items-center">
                 <div className={`text-white ${merri.className}`}>
                   <h4>Contact Us</h4>
                 </div>

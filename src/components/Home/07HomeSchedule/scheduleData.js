@@ -12,6 +12,10 @@ export const schedule = [
     title: "Srimad Bhagavatam",
   },
   {
+    time: "08:30 AM – 08:45 AM",
+    title: "Dhoop Aarti",
+  },
+  {
     time: "07:30 AM – 11:55 AM",
     title: "Darshan Open",
   },
@@ -24,7 +28,11 @@ export const schedule = [
     title: "Darshan Closes",
   },
   {
-    time: "04:30 PM – 06:30 PM",
+    time: "04:00 PM – 04:15 PM",
+    title: "Pushp Aarti",
+  },
+  {
+    time: "04:00 PM – 08:30 PM",
     title: "Darshan Open",
   },
   {
@@ -32,7 +40,11 @@ export const schedule = [
     title: "Gaura Sandhya Arati",
   },
   {
-    time: "08:30 PM – 9:15 PM",
+    time: "08:30 PM – 08:45 PM",
+    title: "Pushp Aarti",
+  },
+  {
+    time: "08:45 PM – 9:15 PM",
     title: "Last Darshan of Day",
   },
   {

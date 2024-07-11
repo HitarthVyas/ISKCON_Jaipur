@@ -6,6 +6,7 @@ import Contact from "@/components/Connect/IYF/04Contact/Contact";
 import Service from "@/components/Connect/IYF/03Services/Service";
 import Link from "next/link";
 import { Dancing_Script } from "next/font/google";
+import Residencies from "@/components/Connect/IYF/03Residencies/Residencies";
 
 const dancing = Dancing_Script({
   subsets: ["latin"],
@@ -32,6 +33,7 @@ const page = () => {
       </div>
       <Intro />
       <Activities />
+      <Residencies />
       <Service />
       <Contact />
     </div>

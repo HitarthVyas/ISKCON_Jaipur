@@ -32,7 +32,6 @@ const AdoptCow = () => {
       contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
-  
   const imageSize = { width: 200, height: 200 }; // Set width and height to match the "Gau Seva" image
   const firstRow = feed.slice(0, 3); // First three items for the first row
 

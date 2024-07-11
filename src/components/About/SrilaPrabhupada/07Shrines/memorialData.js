@@ -21,6 +21,18 @@ export const memorials = [
     title: "Matchless Gifts",
     img: "/SrilaPrabhupada/memorials/images.jpg",
     details:
-      "At 26 2nd Avenue, Manhattan, New York, you’ll find the first temple Srila Prabhupada established in America and the Western world. This small storefront—the previous tenants had named it “Matchless Gifts”—became the first home of the Hare Krishna movement.",
+      "At 26 2nd Avenue, Manhattan, New York, you'll find the first temple Srila Prabhupada established in America and the Western world. This small storefront—the previous tenants had named it “Matchless Gifts”—became the first home of the Hare Krishna movement.",
+  },
+  {
+    title: "Srila Prabhupada Birthplace",
+    img: "/SrilaPrabhupada/memorials/srila-prabhupada-birthplace.jpeg",
+    details:
+      "Prabhupada’s birthplace, in the Tollygunge neighborhood of Kolkata, was inaugurated as a memorial site in 2001, on the 125th anniversary of Prabhupada’s birth, by West Bengal Chief Minister Mamata Banerjee.",
+  },
+  {
+    title: "Bhaktivinode Asan",
+    img: "/SrilaPrabhupada/memorials/meeting-place.jpeg",
+    details:
+      "In the Ultadanga neighborhood of Kolkata, the building, known as Bhaktivinode Asan where Prabhupada first met his guru, Bhaktisiddhanta Sarasvati, has also been restored as a heritage site.",
   },
 ];

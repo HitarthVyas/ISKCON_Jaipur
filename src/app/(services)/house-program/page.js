@@ -26,7 +26,7 @@ const popOutButtonVariants = {
 
 const Page = () => {
   return (
-    <div> 
+    <div>
       <div
         className="relative h-screen w-full bg-cover bg-top"
         style={{ backgroundImage: "url('/Services/HouseProgram/house-program.png')" }}

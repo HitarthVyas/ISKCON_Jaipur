@@ -19,13 +19,13 @@ const Facilities = () => {
   return (
     <div className="py-14 px-10 2xl:flex 2xl:flex-col 2xl:items-center">
       <h1
-        className={`${ptserif.className} pb-6 font-[400] text-center text-4xl`}
+        className={`${ptserif.className} mb-10 font-[400] text-center text-4xl`}
       >
         Facilities
       </h1>
       <div
         ref={ref}
-        className="grid lg:grid-cols-4 grid-cols-2 place-items-center gap-4 2xl:w-[1500px]"
+        className="flex justify-center gap-20 gap-y-8 flex-wrap max-w-screen-lg m-auto"
       >
         {features.map((facility, index) => (
           <motion.div
@@ -36,7 +36,7 @@ const Facilities = () => {
               delay: inView ? 0.2 * (index + 1) : 0,
             }}
             key={index}
-            className="flex flex-col items-center"
+            className="flex flex-col items-center max-w-32"
           >
             <div className="w-[90px] h-[90px] flex justify-center items-center mb-2 border-2  rounded-full">
               <img

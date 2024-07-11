@@ -9,12 +9,10 @@ import {
   Merriweather_Sans,
 } from "next/font/google";
 import SadhuPaymentSection from "../../SadhuSeva/04SadhuPaymentSection/SadhuPaymentSection";
-import GauSevaPaymentSection from "../03GauSevaPaymentSection/GauSevaPaymentSection";
+import GauSevaPaymentSection from "../03GauSevaPaymentSectoin.js/GauSevaPaymentSection";
 import CowCarousel from "../02Carousel/CowCarousel";
 import AdoptCow from "../04AdoptCow/AdoptCow";
 import GauSeva from "@/app/(donation)/gau-seva/page";
-import PriceDistribution from "../../FoodForLife/04PriceDistribution/PriceDistribution";
-import DonationPlane from "../05DonationPlane/DonationPlane";
 
 const caveat1 = Caveat({
   subsets: ["latin"],
@@ -116,7 +114,7 @@ const MainPoster = () => {
   };
 
   const handleScrollToPaymentSection = () => {
-    const paymentSection = document.getElementById("paymentSection1");
+    const paymentSection = document.getElementById("paymentSection");
     if (paymentSection) {
       paymentSection.scrollIntoView({ behavior: "smooth" });
     }
@@ -237,14 +235,10 @@ const MainPoster = () => {
         <div className="mt-10 w-full">
           <AdoptCow />
         </div>
-        <div className="w-full">
-          <DonationPlane />
-        </div>
-        <div id="paymentSection1" className="mt-5 mb-5 w-full">
+        <div className="mt-5 mb-5 w-full">
           <GauSevaPaymentSection />
         </div>
 
-        <PriceDistribution />
         <div  id="contactSection"> 
           <h1
             className="text-white text-center text-5xl max-sm:text-2xl py-16 px-5"

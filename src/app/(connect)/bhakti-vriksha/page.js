@@ -1,6 +1,7 @@
 "use client"
 
 import BvIntro from "@/components/Connect/BhaktiVriksha/01Intro/BvIntro"
+import Benefit from "@/components/Connect/BhaktiVriksha/02Benefits/Benefits"
 import Objectives from "@/components/Connect/BhaktiVriksha/02Objectives/Objectives"
 import Contact from "@/components/Connect/BhaktiVriksha/03Contact/Contact"
 import { Dancing_Script } from "next/font/google"
@@ -30,6 +31,7 @@ const page = () => {
         </Link>
       </div>
       <BvIntro />
+      <Benefit />
       <Objectives />
       <Contact />
     </div>

@@ -24,14 +24,14 @@ const sadhuseva = [
     Title: "Sunday Feast",
     Description:
       "Roti, Daal, Chawal, and Multiple Vegies with 3-4 types Sweets",
-    Donation: "₹ 25,000",
+    Donation: "₹ 11,000",
   },
   {
     id: "2",
     img: "/Donation/SadhuSeva/sadhu-bhojan-1.jpg",
     Title: "Maha Preeti Bhoj",
     Description: "Paneer Meal + Special Sweets + Snacks",
-    Donation: "₹ 30,000",
+    Donation: "₹ 31,000",
   },
   {
     id: "3",
@@ -45,7 +45,7 @@ const sadhuseva = [
     img: "/Donation/SadhuSeva/sadhu-bhojan-2.png",
     Title: "Regular Bhoj",
     Description: "Normal Meal (Daal Chawal) + 1 Vegie",
-    Donation: "₹ 5,000",
+    Donation: "₹ 15,000",
   },
 ];
 

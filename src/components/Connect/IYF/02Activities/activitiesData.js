@@ -15,8 +15,8 @@ export const activities = [
     title: "Personal Assistance",
     image: "/Connect/IYF/activities/campus-outreach.jpg",
   },
-  {
-    title: "Student Residencies",
-    image: "/Connect/IYF/activities/residency.jpg",
-  },
+  // {
+  //   title: "Student Residencies",
+  //   image: "/Connect/IYF/activities/residency.jpg",
+  // },
 ]

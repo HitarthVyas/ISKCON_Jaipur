@@ -28,7 +28,7 @@ export const activities = [
       "Meditate on the Hare Krishna Maha Mantra, channeling spiritual energy and finding inner peace through devotion and meditation practice.",
   },
   {
-    title: "Nourishing Lectures",
+    title: "Enlivening Lectures",
     image:
       "/Services/HouseProgram/lecture-house.jpg",
     details:
