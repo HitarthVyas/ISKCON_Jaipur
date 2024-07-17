@@ -7,7 +7,7 @@ export const contactData = [
   },
   {
     name: "Madhu Gupta Mataji",
-    spouse: "Giriraj Gupta",
+    spouse: "Giriraj Gupta Prabhuji",
     number: "9252530063",
     address: "ISKCON Temple, Jaipur",
   },
