@@ -1,8 +1,14 @@
 export const contactData = [
   {
     name: "Dhananjay Sakha Prabhuji",
-    spouse: "Subhadra Bhakti Devi Mataji",
+    spouse: "Subhadra Bhakti Devi Mataji",
     number: "9887090523",
+    address: "Surabhi Kunj, Jaipur",
+  },
+  {
+    name: "Rasika Mukunda Prabhuji",
+    spouse: "Syama Gaurangi Devi Mataji",
+    number: "9983332999",
     address: "Surabhi Kunj, Jaipur",
   },
   {
@@ -36,10 +42,22 @@ export const contactData = [
     address: "Surabhi Kunj, Jaipur",
   },
   {
+    name: "Vishwambhar Guru Prabhuji",
+    spouse: "Priya Sukhwani Mataji",
+    number: "9214961856",
+    address: "Murlipura, Jaipur",
+  },
+  {
     name: "Sitaram Pran Prabhuji",
     spouse: "Manohari Gaurangi Devi Mataji",
     number: "9828763255",
     address: "Surabhi Kunj, Jaipur",
+  },
+  {
+    name: "Rasika Mukunda Prabhuji",
+    spouse: "Syama Gaurangi Devi Mataji",
+    number: "9983332999",
+    address: "Murlipura, Jaipur",
   },
   {
     name: "Dhananjaya Sakha Prabhuji",

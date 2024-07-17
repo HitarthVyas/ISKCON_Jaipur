@@ -38,7 +38,7 @@ const Contact = () => {
       <h2 className={`${flower.className} text-violet-800 text-center`}>
         Offline
       </h2>
-      <div className="py-5 px-6 flex justify-center gap-5 flex-wrap max-w-screen-xl m-auto">
+      <div className="py-5 px-4 flex justify-center gap-5 flex-wrap max-w-screen-2xl m-auto">
         {contactData.map((item, index) => (
           <div
             key={index}
