@@ -32,8 +32,8 @@ const ZonalSecretariesIntro = () => {
   return (
     <div>
       <CouncilMembersIntro />
-      <div className="bg-[#d17a29] text-black p-4 md:p-10">
-        <h1 className={`${dancing.className} text-4xl text-white `}>
+      <div className="bg-[#ffffff] text-black p-4 md:p-10">
+        <h1 className={`${dancing.className} text-4xl `}>
           Steering Committee 
         </h1>
         {/* <hr className="sm:w-1/2 border-white mt-2 mb-0" /> */}
@@ -65,11 +65,11 @@ const ActivityCard = ({ pt, i }) => {
       </div>
     </div>
     <h4
-      className={`w-[210px] mt-2 text-white text-center font-semibold leading-5 pt-2 ${agdaFont.className}`}
+      className={`w-[210px] mt-2 text-center font-semibold leading-5 pt-2 ${agdaFont.className}`}
     >
       {pt.Name}
     </h4>
-    <h6 className="text-center w-[210px] text-[#e1dfea] font-semibold"> 
+    <h6 className="text-center w-[210px] text-[#828282] font-semibold"> 
       {pt.title}
     </h6>
   </motion.div>
