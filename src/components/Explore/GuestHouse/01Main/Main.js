@@ -18,7 +18,7 @@ export default function GuestHouseMain() {
         className="relative h-[100vh] mt-[65px] w-full overflow-hidden"
       >
         <Image
-          src="/Explore/GuestHouse/mainpic.jpg"
+          src="/Explore/GuestHouse/mainpic.JPG"
           alt="Main Poster"
           layout="fill"
           objectFit="cover"
