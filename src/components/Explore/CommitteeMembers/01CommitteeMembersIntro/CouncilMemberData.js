@@ -2,12 +2,12 @@ export const activities = [
     {
       Name: "HH Guru Prasad Swami Maharaj",
       title: "GBC Chairman",
-      image: "/Comittee/Zonal/guru.png",
+      image: "/Comittee/zonal/guru.png",
     },
     {
       Name: "HG Devakinandan Prabhuji",
       title: "General Counsel for GBC",
-      image: "/Comittee/Zonal/pr.png",
+      image: "/Comittee/zonal/pr.png",
     },
   ]
 
