@@ -42,7 +42,7 @@ const sadhuseva = [
   },
   {
     id: "4",
-    img: "/Donation/SadhuSeva/sadhu-bhojan-2.png",
+    img: "/Donation/SadhuSeva/img3.jpg",
     Title: "Regular Bhoj",
     Description: "Normal Meal (Daal Chawal) + 1 Vegie",
     Donation: "₹ 5,000",
