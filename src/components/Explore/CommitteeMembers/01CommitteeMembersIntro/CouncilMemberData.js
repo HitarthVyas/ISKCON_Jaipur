@@ -41,13 +41,13 @@ export const activities = [
       image: "/Comittee/templeComitte/img1.png",
     },
     {
-      Name:"Her Grace Radha Sundari Mataji",
-      image: "/Comittee/templeComitte/img2.png",
-    },
-    {
       Name: "His Grace Hari Bhakti Prabhuji",
       title: "IYF Jaipur Director",
       image: "/Comittee/templeComitte/img4.png",
+    },
+    {
+      Name:"Her Grace Radha Sundari Mataji",
+      image: "/Comittee/templeComitte/img2.png",
     },
     {
       Name: "His grace Rishab dev prabhuji",
