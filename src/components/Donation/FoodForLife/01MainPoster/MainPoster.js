@@ -35,7 +35,7 @@ const feed = [
   {
     id: "1",
     Title: "General Donation",
-    Price: "₹ Amount of your choice ~ Serving for Dharma purifies your soul.",
+    Price: "Amount of your choice ~ ₹ 51 Per Dona",
   },
   {
     id: "2",
@@ -205,7 +205,7 @@ const MainPoster = () => {
           <CirclePoster />
 
           {/* donation section start */}
-          <div id="donationSection" className=" flex flex-col items-center mb-[40px]">
+          <div id="donationSection" className=" flex flex-col items-center mb-[40px] mt-24">
             {feed.map((feed) => (
               <>
                 <div className=" flex flex-col w-3/4 pt-[27px] pb-[10px] md:flex-row gap-1 ">
