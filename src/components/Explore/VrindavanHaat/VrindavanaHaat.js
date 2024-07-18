@@ -34,7 +34,7 @@ const VrindavanaHaat = () => {
         }}
       >
         <div className="absolute text-center w-full top-[25vh]">
-          <img src="/Explore/VrindavanHaat/hgtvpprji.png" className="h-72 m-auto" />
+          <img src="/Comittee/templeComitte/img5.png" className="h-72 m-auto" />
           <motion.h1
             className={`${dancing.className} p-4 -mt-12 pt-0 text-white text-5xl sm:text-7xl`}
             style={{ textShadow: "0px 0px 5px black, 0px 0px 5px black" }}
